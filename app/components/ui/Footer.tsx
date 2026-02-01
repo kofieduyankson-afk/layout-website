@@ -70,7 +70,7 @@ export default function Footer() {
 
                 {/* Bottom Bar */}
                 <div className="mt-10 border-t pt-6 text-center text-sm text-gray-500">
-                    © {new Date().getFullYear()} CompanyName. All rights reserved.
+                    © {new Date().getFullYear()} Layout Laurate LLc All rights reserved.
                 </div>
             </div>
         </footer>
