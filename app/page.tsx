@@ -5,15 +5,26 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50 dark:bg-gray-900">
       {/* Hero */}
-      <section className="py-20 text-center">
-        <h1>Layout Laurate LLC  </h1>
-        <h1 className="text-5xl font-bold mb-4 text-gray-900 dark:text-white">
-          Building Digital Solutions
-        </h1>
-        <p className="text-gray-700 dark:text-gray-300">
-          Modern IT services for modern businesses
-        </p>
+      <section
+        className="relative w-full h-screen bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/bg-image.png')" }}
+      >
+
+        <div className="absolute inset-0 bg-black/40"></div>
+
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+          <h1 className="text-3xl font-medium text-white mb-2 sm:text-4xl">
+            Layout Laurate LLC
+          </h1>
+          <h1 className="text-5xl font-bold mb-4 text-white sm:text-6xl">
+            Building Digital Solutions
+          </h1>
+          <p className="text-gray-200 text-lg sm:text-xl max-w-2xl">
+            Modern IT services for modern businesses
+          </p>
+        </div>
       </section>
+
       <section>
 
         <ServicesGrid />

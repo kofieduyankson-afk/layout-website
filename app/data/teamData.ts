@@ -8,26 +8,26 @@ export const team: TeamMember[] = [
     {
         name: "Peter ",
         role: "Founder ",
-        image: "/team/peter.jpg",
+        image: "/public/profile-pic.png",
     },
     {
         name: "Godwin",
         role: "Project Manager",
-        image: "/team/godwin.jpg",
+        image: "/public/profile-pic.png",
     },
     {
         name: "Vansh",
         role: "Senior Developer Engineer",
-        image: "/team/vansh.jpg",
+        image: "/public/profile-pic.png",
     },
     {
         name: "Frank",
         role: "Operations Manager",
-        image: "/team/frank.jpg",
+        image: "/public/profile-pic.png",
     },
     {
         name: "Kofi",
         role: "Junior developer",
-        image: "/team/kofi.jpg",
+        image: "/public/profile-pic.png",
     },
 ];

@@ -14,14 +14,19 @@ export default function ServiceCard({ service }: Props) {
 
     return (
         <motion.div
-            className="flex-shrink-0 w-64 h-40 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md cursor-pointer relative overflow-hidden"
+            className="flex-shrink-0 w-64 h-50 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md cursor-pointer relative overflow-hidden"
             onHoverStart={() => setHover(true)}
             onHoverEnd={() => setHover(false)}
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
         >
-            <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
+            <h3 className="text-lg font-semibold mb-2">
+                {service.title}{" "}
+                <span className="text-2xl">
+                    {service.emoji}
+                </span>
+            </h3>
 
             <motion.p
                 className="text-sm text-gray-600 dark:text-gray-300 absolute bottom-6 left-6 right-6 opacity-0"

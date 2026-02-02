@@ -3,57 +3,128 @@ export interface Service {
     id: number;
     title: string;
     description: string;
+    emoji: string;
 }
 
-export const services: Service[] = [
+export const services = [
     {
-        id: 1,
         title: "IT Solutions",
-        description: "Comprehensive IT solutions tailored for your business.",
+        description:
+            "End-to-end IT solutions designed to streamline operations, improve efficiency, and support business growth across digital platforms.",
+        items: [
+            "System Integration",
+            "Business Automation",
+            "IT Consulting",
+            "Infrastructure Support",
+        ],
+        emoji: "💻",
     },
     {
-        id: 2,
         title: "Web Development",
-        description: "Responsive, scalable websites built to perform.",
+        description:
+            "Custom, fast, and SEO-friendly websites built to represent your brand and convert visitors into customers.",
+        items: [
+            "Corporate Websites",
+            "Next.js & React",
+            "E-commerce Platforms",
+            "Performance Optimization",
+        ],
+        emoji: "🌐",
     },
     {
-        id: 3,
         title: "App Development",
-        description: "Mobile and web apps with intuitive design and performance.",
+        description:
+            "High-quality mobile applications designed for Android and iOS, focused on usability, performance, and scalability.",
+        items: [
+            "Android Apps",
+            "iOS Apps",
+            "Cross-platform Solutions",
+            "App Maintenance",
+        ],
+        emoji: "📱",
     },
     {
-        id: 4,
         title: "Software Development",
-        description: "Custom software solutions for business efficiency.",
+        description:
+            "Tailor-made software solutions built to solve specific business challenges and support long-term scalability.",
+        items: [
+            "Custom Business Software",
+            "Web Applications",
+            "API Development",
+            "System Automation",
+        ],
+        emoji: "🖥️",
     },
     {
-        id: 5,
         title: "Web Design",
-        description: "Beautiful, user-friendly website designs that convert.",
+        description:
+            "Modern and responsive web designs that create strong first impressions and deliver great user experiences.",
+        items: [
+            "UI / UX Design",
+            "Responsive Layouts",
+            "Brand-focused Design",
+            "Website Redesign",
+        ],
+        emoji: "🕸️",
     },
     {
-        id: 6,
         title: "WhatsApp Business API",
-        description: "Integrate WhatsApp for customer communication and automation.",
+        description:
+            "Official WhatsApp Business API integration for customer support, notifications, and automated messaging at scale.",
+        items: [
+            "Chatbot Development",
+            "Automated Notifications",
+            "Customer Support Systems",
+            "API Integration",
+        ],
+        emoji: "📡",
     },
     {
-        id: 7,
         title: "IT Support & Maintenance",
-        description: "Reliable IT support to keep your systems running smoothly.",
+        description:
+            "Reliable technical support and system maintenance to keep your business running smoothly with minimal downtime.",
+        items: [
+            "System Monitoring",
+            "Bug Fixes",
+            "Software Updates",
+            "Technical Support",
+        ],
+        emoji: "🔌",
     },
     {
-        id: 8,
         title: "Graphic Design",
-        description: "Creative visuals for brands and marketing campaigns.",
+        description:
+            "Creative graphic design solutions that visually communicate your brand message across digital and print media.",
+        items: [
+            "Brand Identity",
+            "Marketing Materials",
+            "Social Media Graphics",
+            "Print Design",
+        ],
+        emoji: "🎨",
     },
     {
-        id: 9,
-        title: "SaaS Solutions",
-        description: "Software as a service solutions for modern businesses.",
+        title: "SaaS",
+        description:
+            "Design and development of scalable Software-as-a-Service platforms tailored to your business model and users.",
+        items: [
+            "SaaS Architecture",
+            "Subscription Systems",
+            "Admin Dashboards",
+            "Cloud Deployment",
+        ],
+        emoji: "🪜",
     },
     {
-        id: 10,
         title: "Operations & Booking Platform",
-        description: "Streamlined booking and operations management solutions.",
+        description:
+            "Custom platforms that manage bookings, operations, payments, and reporting to simplify business workflows.",
+        items: [
+            "Ticketing Systems",
+            "Booking Management",
+            "Payment Integration",
+            "Admin & Reporting Tools",
+        ],
+        emoji: "📄",
     },
 ];

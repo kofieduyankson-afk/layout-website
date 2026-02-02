@@ -7,8 +7,8 @@ import { team } from "../data/teamData";
 export default function About() {
     return (
         <main className="min-h-screen bg-zinc-50 dark:bg-gray-900">
-            {/* Hero */}
-            <section className="px-6 pt-24 pb-16 text-center">
+
+            <section className="px-6 pt-24 pb-16 text-center shadow-md">
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
                     About Us
                 </h1>
@@ -19,7 +19,7 @@ export default function About() {
             </section>
 
             {/* What We Do */}
-            <section className="px-6 pb-20">
+            <section className="px-6 pb-20 ">
                 <div className="mx-auto max-w-5xl text-center">
                     <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
                         What We Do
