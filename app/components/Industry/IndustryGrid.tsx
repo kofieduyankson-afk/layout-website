@@ -5,9 +5,9 @@ import { industries } from "../../data/industriesData";
 
 export default function IndustriesGrid() {
     return (
-        <section className="py-16 bg-gray-50 dark:bg-gray-900">
+        <section className="py-16 bg-white">
             <div className="max-w-7xl mx-auto px-6 text-center">
-                <h2 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white text:center">
+                <h2 className="text-3xl font-bold mb-8 text-center text-[#262e31]">
                     Industries We Serve
                 </h2>
 

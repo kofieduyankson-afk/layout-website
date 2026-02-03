@@ -3,8 +3,8 @@ import IndustriesGrid from "./components/Industry/IndustryGrid";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      {/* Hero */}
+    <main className="min-h-screen bg-white">
+      {/* Hero      #17a28f     #262e31*/}
       <section
         className="relative w-full h-screen bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/bg-image.png')" }}

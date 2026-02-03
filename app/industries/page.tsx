@@ -2,15 +2,15 @@
 
 "use client";
 
-import IndustriesCard from "../components/ui/ExpandIndustryCard";
+import IndustriesCard from "../components/Card/ExpandIndustryCard";
 import { industries } from "../data/detailedIndustries";
 
 export default function Industries() {
     return (
-        <main className="min-h-screen bg-zinc-50 dark:bg-gray-900">
-            {/* Hero */}
+        <main className="min-h-screen bg-white">
+            {/*Title and Description */}
             <section className="px-6 pt-24 pb-16 text-center">
-                <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-#d5d6d7">
                     Industries We Serve
                 </h1>
                 <p className="mt-4 max-w-2xl mx-auto text-gray-600 dark:text-gray-300">
@@ -19,7 +19,7 @@ export default function Industries() {
                 </p>
             </section>
 
-            {/* Industries Grid */}
+            {/* Detqailed Industry Cards */}
             <section className="px-6 pb-24">
                 <div className="mx-auto max-w-7xl">
                     <div

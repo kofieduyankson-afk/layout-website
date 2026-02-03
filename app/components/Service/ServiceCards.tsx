@@ -1,88 +1,69 @@
-
 "use client";
 
 import { motion } from "framer-motion";
 import { Service } from "../../data/servicesData";
-import { useState } from "react";
 
 interface Props {
     service: Service;
 }
 
 export default function ServiceCard({ service }: Props) {
-    const [hover, setHover] = useState(false);
-
     return (
         <motion.div
-            className="flex-shrink-0 w-64 h-50 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md cursor-pointer relative overflow-hidden"
-            onHoverStart={() => setHover(true)}
-            onHoverEnd={() => setHover(false)}
-            initial={{ x: -50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="
+        group relative bg-white rounded-2xl p-6 shadow-lg 
+        hover:shadow-2xl transition-all duration-300 cursor-pointer 
+        border border-gray-100 overflow-hidden
+      "
         >
-            <h3 className="text-lg font-semibold mb-2">
-                {service.title}{" "}
-                <span className="text-2xl">
-                    {service.emoji}
-                </span>
-            </h3>
+            {/* Optional hover background overlay */}
+            <div
+                className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-2xl"
+                style={{ backgroundImage: `url(${service.image})` }}
+            ></div>
 
-            <motion.p
-                className="text-sm text-gray-600 dark:text-gray-300 absolute bottom-6 left-6 right-6 opacity-0"
-                animate={{ opacity: hover ? 1 : 0, y: hover ? 0 : 10 }}
-                transition={{ duration: 0.3 }}
-            >
-                {service.description}
-            </motion.p>
+            {/* Card content */}
+            <div className="relative z-10 flex flex-col items-center text-center">
+                {/* Emoji / icon */}
+                <div
+                    className={`w-16 h-16 mb-4 flex items-center justify-center text-3xl rounded-2xl shadow-lg ${service.iconGradient}`}
+                >
+                    {service.emoji}
+                </div>
+
+                {/* Title */}
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-teal-600 transition-colors duration-300">
+                    {service.title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-gray-600 text-sm mb-4">{service.description}</p>
+
+                {/* Features / items */}
+                <div className="space-y-1 w-full">
+                    {service.items?.map(item => (
+                        <div className="flex items-center text-xs text-gray-500" key={item}>
+                            <svg
+                                className="w-3 h-3 text-teal-500 mr-2"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                            >
+                                <path
+                                    fillRule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clipRule="evenodd"
+                                ></path>
+                            </svg>
+                            {item}
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/* subtle gradient overlay on hover */}
+            <div
+                className={`absolute inset-0 opacity-0 group-hover:opacity-5 transition-opacity duration-300 rounded-2xl ${service.iconGradient}`}
+            ></div>
         </motion.div>
     );
 }
-
-// import { services } from "./serviceData";
-
-// export default function ServicesCard() {
-//     return (
-//         <div className="relative">
-//             <h4 className="text-sm font-semibold text-gray-900">Services</h4>
-
-//             <ul className="mt-4 space-y-3">
-//                 {services.map((service) => (
-//                     <li key={service.title} className="group relative">
-//                         {/* Service title */}
-//                         <span className="cursor-pointer text-sm text-gray-600 hover:text-blue-600 group-hover:underline">
-//                             {service.title}
-//                         </span>
-
-//                         {/* Hover panel */}
-//                         <div
-//                             className="
-//      absolute left-full top-0 z-20 ml-6 w-72
-//     rounded-xl border bg-white p-5 shadow-xl
-//     opacity-0 -translate-x-8
-//     transition-all duration-700 ease-out
-//     group-hover:opacity-100
-//     group-hover:translate-x-0
-//   "
-//                         >
-
-//                             <h5 className="font-semibold text-gray-900">
-//                                 {service.title}
-//                             </h5>
-
-//                             <p className="mt-2 text-sm text-gray-600">
-//                                 {service.description}
-//                             </p>
-
-//                             <ul className="mt-3 space-y-1 text-sm text-gray-500">
-//                                 {service.items.map((item) => (
-//                                     <li key={item}>• {item}</li>
-//                                 ))}
-//                             </ul>
-//                         </div>
-//                     </li>
-//                 ))}
-//             </ul>
-//         </div>
-//     );
-// }

@@ -18,9 +18,9 @@ export default function ExpandCard({ service }: Props) {
             </p>
 
             <ul className="mt-4 space-y-1 text-sm text-gray-500 dark:text-gray-400">
-                {service.items.map((item) => (
+                {/* {service.items.map((item) => (
                     <li key={item}>• {item}</li>
-                ))}
+                ))} */}
             </ul>
         </div>
     );

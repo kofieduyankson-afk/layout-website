@@ -13,24 +13,53 @@ export default function IndustriesCard({ industry }: Props) {
 
     return (
         <motion.div
-            className="relative w-full p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md cursor-pointer overflow-hidden"
+            className="group relative w-full p-6 bg-white rounded-2xl shadow-lg cursor-pointer overflow-hidden border border-gray-100"
             onHoverStart={() => setHover(true)}
             onHoverEnd={() => setHover(false)}
-            whileHover={{ y: -6 }} // subtle lift
-            transition={{ duration: 0.3, ease: "easeOut" }}
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
         >
-            <h3 className="text-lg font-semibold mb-2">
-                {industry.title}
-            </h3>
+            {/* Hover background image */}
+            {industry.image && (
+                <div
+                    className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-10 transition-opacity duration-300"
+                    style={{ backgroundImage: `url(${industry.image})` }}
+                ></div>
+            )}
 
-            <motion.p
-                className="text-sm text-gray-600 dark:text-gray-300"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: hover ? 1 : 0 }}
-                transition={{ duration: 0.25 }}
-            >
-                {industry.description}
-            </motion.p>
+            <div className="relative z-10 flex flex-col items-start">
+                {/* Emoji / Icon */}
+                {industry.emoji && (
+                    <div
+                        className={`w-16 h-16 ${industry.iconGradient} rounded-2xl flex items-center justify-center text-3xl mb-4 shadow-lg`}
+                    >
+                        {industry.emoji}
+                    </div>
+                )}
+
+                {/* Title */}
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-teal-600 transition-colors duration-300">
+                    {industry.title}
+                </h3>
+
+                {/* Description */}
+                <motion.p
+                    className="text-sm text-gray-600"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: hover ? 1 : 0, y: hover ? 0 : 10 }}
+                    transition={{ duration: 0.3 }}
+                >
+                    {industry.description}
+                </motion.p>
+            </div>
+
+            {/* Gradient overlay on hover */}
+            {industry.iconGradient && (
+                <div
+                    className={`absolute inset-0 ${industry.iconGradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300 rounded-2xl`}
+                ></div>
+            )}
         </motion.div>
     );
 }

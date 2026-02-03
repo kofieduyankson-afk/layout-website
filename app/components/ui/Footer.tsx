@@ -1,14 +1,22 @@
 "use client";
 
 import Link from "next/link";
-
+import Image from "next/image";
 export default function Footer() {
     return (
-        <footer className="border-t border-gray-700 bg-gray-900 text-gray-300">
+        // bg - [#17a28f]
+        <footer className="border-t border-gray-700  dark:bg-gray-800  text-white">
             <div className="mx-auto max-w-7xl px-6 py-10">
                 <div className="grid gap-8 md:grid-cols-3">
 
                     <div>
+                        <Image
+                            src="/layoutircon.png"
+                            alt="Layout Laurate LLC Logo"
+                            width={40}
+                            height={40}
+                            className="object-contain"
+                        />
                         <h3 className="text-lg font-semibold text-white">
                             Layout Laurate LLC
                         </h3>
@@ -19,14 +27,14 @@ export default function Footer() {
 
 
                     <div>
-                        <h4 className="text-sm font-semibold text-white">Quick Links</h4>
+                        <h4 className="text-sm font-semibold text-white"></h4>
                         <ul className="mt-3 space-y-2 text-sm">
                             <li>
                                 <Link href="/about" className="hover:text-blue-500 transition-colors">
                                     About Us
                                 </Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link href="/services" className="hover:text-blue-500 transition-colors">
                                     Services
                                 </Link>
@@ -35,7 +43,7 @@ export default function Footer() {
                                 <Link href="/industries" className="hover:text-blue-500 transition-colors">
                                     Industries
                                 </Link>
-                            </li>
+                            </li> */}
                             <li>
                                 <Link href="/contact" className="hover:text-blue-500 transition-colors">
                                     Contact Us
