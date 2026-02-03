@@ -6,6 +6,7 @@ export interface Industry {
     emoji?: string;
     iconGradient?: string;
     image?: string;
+    link?: string;
 }
 
 export const industries: Industry[] = [
@@ -17,6 +18,7 @@ export const industries: Industry[] = [
         emoji: "🚗",
         iconGradient: "bg-gradient-to-br from-red-500 to-pink-500",
         image: "/auto.jpg",
+        link: "/industries/Automotive",
     },
     {
         id: 2,
@@ -26,6 +28,7 @@ export const industries: Industry[] = [
         emoji: "🏦",
         iconGradient: "bg-gradient-to-br from-blue-500 to-indigo-500",
         image: "/finance.jpg",
+        link: "/industries/Banking&Finance",
     },
     {
         id: 3,
@@ -35,6 +38,7 @@ export const industries: Industry[] = [
         emoji: "🚌",
         iconGradient: "bg-gradient-to-br from-green-500 to-teal-500",
         image: "/shared.jpg",
+        link: "/industries/Shared_Mobility",
     },
     {
         id: 4,
@@ -44,6 +48,7 @@ export const industries: Industry[] = [
         emoji: "📦",
         iconGradient: "bg-gradient-to-br from-yellow-500 to-orange-500",
         image: "/logistics.jpg",
+        link: "/industries/Logistics",
     },
     {
         id: 5,
@@ -53,6 +58,7 @@ export const industries: Industry[] = [
         emoji: "⚡",
         iconGradient: "bg-gradient-to-br from-emerald-500 to-lime-500",
         image: "/electric.jpg",
+        link: "/industries/Electric_Mobility",
     },
     {
         id: 6,
@@ -62,6 +68,7 @@ export const industries: Industry[] = [
         emoji: "🛒",
         iconGradient: "bg-gradient-to-br from-purple-500 to-pink-500",
         image: "/e-commerce.jpg",
+        link: "/industries/E-commerce",
     },
     {
         id: 7,
@@ -71,6 +78,7 @@ export const industries: Industry[] = [
         emoji: "☁️",
         iconGradient: "bg-gradient-to-br from-blue-400 to-indigo-500",
         image: "/saas.jpg",
+        link: "/industries/SaaS",
     },
     {
         id: 8,
@@ -80,6 +88,7 @@ export const industries: Industry[] = [
         emoji: "⏱️",
         iconGradient: "bg-gradient-to-br from-red-400 to-orange-500",
         image: "/demand.png",
+        link: "/industries/On-Demand",
     },
     {
         id: 9,
@@ -89,6 +98,7 @@ export const industries: Industry[] = [
         emoji: "💊",
         iconGradient: "bg-gradient-to-br from-teal-500 to-cyan-500",
         image: "/healthcare.jpg",
+        link: "/industries/Healthcare",
     },
     {
         id: 10,
@@ -98,6 +108,7 @@ export const industries: Industry[] = [
         emoji: "💳",
         iconGradient: "bg-gradient-to-br from-blue-600 to-indigo-700",
         image: "/fintech.png",
+        link: "/industries/FinTech",
     },
     {
         id: 11,
@@ -107,5 +118,6 @@ export const industries: Industry[] = [
         emoji: "🏠",
         iconGradient: "bg-gradient-to-br from-amber-500 to-orange-500",
         image: "/estate.jpg",
+        link: "/industries/Real-Estate",
     },
 ];

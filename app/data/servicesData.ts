@@ -6,6 +6,7 @@ export interface Service {
     description: string;
     items?: string[];
     image?: string;
+    link?: string;
 }
 
 export const services: Service[] = [
@@ -16,6 +17,7 @@ export const services: Service[] = [
         description: "Building fast, modern, and responsive websites for your business.",
         items: ["Frontend development", "Backend development", "Fullstack solutions"],
         image: "/webdev.jpg",
+        link: "/services/Web_Development",
     },
     {
         title: "App Development",
@@ -24,6 +26,7 @@ export const services: Service[] = [
         description: "Custom mobile apps for iOS and Android tailored to your business needs.",
         items: ["iOS apps", "Android apps", "Cross-platform apps"],
         image: "/apps.jpg",
+        link: "/services/App_Development",
     },
     {
         title: "Software Development",
@@ -32,6 +35,7 @@ export const services: Service[] = [
         description: "Custom software solutions to streamline your operations.",
         items: ["Desktop software", "Enterprise software", "Automation tools"],
         image: "/app.jpg",
+        link: "/services/Software_Development",
     },
     {
         title: "Web Design",
@@ -40,6 +44,7 @@ export const services: Service[] = [
         description: "Beautiful and user-friendly designs to make your website stand out.",
         items: ["UI/UX design", "Responsive design", "Brand-focused visuals"],
         image: "/web.jpg",
+        link: "/services/Web_Design",
     },
     {
         title: "WhatsApp Business API",
@@ -48,21 +53,17 @@ export const services: Service[] = [
         description: "Connect with customers directly through WhatsApp for seamless communication.",
         items: ["Automated messaging", "Customer support integration", "Notifications"],
         image: "/whatsapp.jpg",
+        link: "/services/Whatsapp_Business_API",
     },
     {
         title: "IT Solutions",
         emoji: "🖥️",
         iconGradient: "bg-gradient-to-br from-slate-500 to-gray-700",
         description: "Reliable IT solutions to support, secure, and scale your business operations.",
-        items: [
-            "System integration",
-            "Infrastructure management",
-            "Cybersecurity solutions",
-            "IT support & maintenance",
-        ],
+        items: ["System integration", "Infrastructure management", "Cybersecurity solutions", "IT support & maintenance"],
         image: "/ITS.jpg",
+        link: "/services/IT_Solutions",
     },
-
     {
         title: "IT Support & Maintenance",
         emoji: "🖥️",
@@ -70,6 +71,7 @@ export const services: Service[] = [
         description: "Reliable IT maintenance to keep your business running smoothly.",
         items: ["Hardware & software support", "Network monitoring", "Troubleshooting"],
         image: "/IT.jpg",
+        link: "/services/IT_Support_Maintenace",
     },
     {
         title: "Graphic Design",
@@ -78,6 +80,7 @@ export const services: Service[] = [
         description: "Eye-catching visuals to enhance your brand and marketing materials.",
         items: ["Logo design", "Marketing graphics", "Social media creatives"],
         image: "/graphicc.jpg",
+        link: "/services/Graphic_Design",
     },
     {
         title: "SaaS",
@@ -86,6 +89,7 @@ export const services: Service[] = [
         description: "Cloud-based software solutions for easy access and scalability.",
         items: ["Web apps", "Mobile apps", "Cloud hosting"],
         image: "/saas.jpg",
+        link: "/services/saas",
     },
     {
         title: "Operations & Booking Platform",
@@ -94,5 +98,6 @@ export const services: Service[] = [
         description: "Manage bookings, reservations, and business operations efficiently.",
         items: ["Booking management", "Scheduling", "Reports & analytics"],
         image: "/book.png",
+        link: "/services/Operations&Booking_Platform",
     },
 ];

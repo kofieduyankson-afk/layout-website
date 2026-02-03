@@ -8,7 +8,7 @@ export default function Home() {
       {/* Hero */}
       <section
         className="relative w-full h-screen bg-cover bg-center bg-no-repeat shadow-md"
-        style={{ backgroundImage: "url('/bg-image.png')" }}
+        style={{ backgroundImage: "url('/blacker.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/40"></div>
 
