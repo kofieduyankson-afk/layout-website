@@ -15,7 +15,7 @@ export const services: Service[] = [
         iconGradient: "bg-gradient-to-br from-blue-500 to-indigo-500",
         description: "Building fast, modern, and responsive websites for your business.",
         items: ["Frontend development", "Backend development", "Fullstack solutions"],
-        image: "/web dev.jpg",
+        image: "/webdev.jpg",
     },
     {
         title: "App Development",

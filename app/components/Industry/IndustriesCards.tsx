@@ -28,7 +28,7 @@ export default function IndustriesCard({ industry }: Props) {
                 ></div>
             )}
 
-            <div className="relative z-10 flex flex-col items-start">
+            <div className="relative z-10 flex flex-col items-center text-center">
                 {/* Emoji / Icon */}
                 {industry.emoji && (
                     <div

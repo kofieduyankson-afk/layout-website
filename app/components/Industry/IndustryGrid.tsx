@@ -11,11 +11,7 @@ export default function IndustriesGrid() {
                     Industries We Serve
                 </h2>
 
-                <div className="grid gap-6 
-            grid-cols-1 
-            sm:grid-cols-2 
-            lg:grid-cols-4 
-            justify-items-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                     {industries.map((industry) => (
                         <IndustriesCard
                             key={industry.title}

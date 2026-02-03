@@ -6,8 +6,8 @@ export default function Contact() {
 
             {/* Hero */}
             <section
-                className="relative px-6 pt-32 pb-16 text-center bg-[#17a28f]"
-                style={{ backgroundImage: "url('/contact-hero.jpg')" }}
+                className="relative px-6 pt-32 pb-16 text-center bg-[#17a28f] relative bg-cover bg-center"
+                style={{ backgroundImage: "url('/team.jpg')" }}
             >
                 <div className="max-w-3xl mx-auto text-white">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -63,7 +63,8 @@ export default function Contact() {
                 </div>
             </section>
 
-            {/* Contact Form */}
+            <div className="h-1 w-full bg-gradient-to-r from-transparent via-gray-300 to-transparent my-16"></div>
+
             {/* Contact Form */}
             <section className="px-6 py-20 bg-gray-50">
                 <div className="mx-auto max-w-3xl rounded-2xl bg-white p-10 shadow-lg">
@@ -129,14 +130,24 @@ export default function Contact() {
 
 
             {/* CTA */}
-            <section className="px-6 py-16 bg-[#17a28f] text-white text-center rounded-t-3xl">
-                <h2 className="text-3xl font-semibold mb-4">
-                    Let’s Build Something Great
-                </h2>
-                <p className="mb-6 text-lg">
-                    Tell us about your idea and we’ll help bring it to life.
-                </p>
+            <section
+                className="relative px-6 py-16 text-white text-center rounded-t-3xl relative bg-cover bg-center"
+                style={{ backgroundImage: "url('/blacker.jpg')" }}
+            >
+                {/* Overlay for readability */}
+                <div className="absolute inset-0 bg-[#17a28f]/70 rounded-t-3xl"></div>
+
+                {/* Content */}
+                <div className="relative z-10 max-w-3xl mx-auto">
+                    <h2 className="text-3xl font-semibold mb-4">
+                        Let’s Build Something Great
+                    </h2>
+                    <p className="mb-6 text-lg">
+                        Tell us about your idea and we’ll help bring it to life.
+                    </p>
+                </div>
             </section>
+
 
         </main>
     );
