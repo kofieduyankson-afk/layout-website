@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Industry } from "../../data/industriesData";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Props {
     industry: Industry;
@@ -31,14 +32,26 @@ export default function IndustriesCard({ industry }: Props) {
                 )}
 
                 <div className="relative z-10 flex flex-col items-center text-center">
-                    {/* Emoji / Icon */}
-                    {industry.emoji && (
+                    {/* Icon / Emoji */}
+                    {industry.icon ? (
+                        <div
+                            className={`w-16 h-16 ${industry.iconGradient} rounded-2xl mb-4 shadow-lg overflow-hidden flex items-center justify-center`}
+                        >
+                            <Image
+                                src={industry.icon}
+                                alt={industry.title}
+                                width={64}
+                                height={64}
+                                className="object-contain"
+                            />
+                        </div>
+                    ) : industry.emoji ? (
                         <div
                             className={`w-16 h-16 ${industry.iconGradient} rounded-2xl flex items-center justify-center text-3xl mb-4 shadow-lg`}
                         >
                             {industry.emoji}
                         </div>
-                    )}
+                    ) : null}
 
                     {/* Title */}
                     <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-teal-600 transition-colors duration-300">
