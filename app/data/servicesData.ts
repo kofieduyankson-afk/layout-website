@@ -19,7 +19,7 @@ export const services: Service[] = [
         items: ["Frontend development", "Backend development", "Fullstack solutions"],
         image: "/webdev.jpg",
         link: "/services/Web_Development",
-        icon: "",
+        icon: "/icons8-developer.gif",
     },
     {
         title: "App Development",
@@ -29,7 +29,7 @@ export const services: Service[] = [
         items: ["iOS apps", "Android apps", "Cross-platform apps"],
         image: "/apps.jpg",
         link: "/services/App_Development",
-        icon: "",
+        icon: "/icons8-app.gif",
     },
     {
         title: "Software Development",
@@ -59,7 +59,7 @@ export const services: Service[] = [
         items: ["Automated messaging", "Customer support integration", "Notifications"],
         image: "/whatsapp.jpg",
         link: "/services/Whatsapp_Business_API",
-        icon: "/appicons8-whatsapp.gif",
+        icon: "/icons8-whatsapp.gif",
     },
     {
         title: "IT Solutions",
@@ -69,7 +69,7 @@ export const services: Service[] = [
         items: ["System integration", "Infrastructure management", "Cybersecurity solutions", "IT support & maintenance"],
         image: "/ITS.jpg",
         link: "/services/IT_Solutions",
-        icon: "",
+        icon: "/icons8-computer.gif",
     },
     {
         title: "IT Support & Maintenance",
@@ -79,7 +79,7 @@ export const services: Service[] = [
         items: ["Hardware & software support", "Network monitoring", "Troubleshooting"],
         image: "/IT.jpg",
         link: "/services/IT_Support_Maintenace",
-        icon: "",
+        icon: "/icons8-disconnected.gif",
     },
     {
         title: "Graphic Design",
@@ -89,7 +89,7 @@ export const services: Service[] = [
         items: ["Logo design", "Marketing graphics", "Social media creatives"],
         image: "/graphicc.jpg",
         link: "/services/Graphic_Design",
-        icon: "",
+        icon: "/icons8-design.gif",
     },
     {
         title: "SaaS",
@@ -99,7 +99,7 @@ export const services: Service[] = [
         items: ["Web apps", "Mobile apps", "Cloud hosting"],
         image: "/saas.jpg",
         link: "/services/saas",
-        icon: "",
+        icon: "/icons8-cloud-development.gif",
     },
     {
         title: "Operations & Booking Platform",
@@ -109,6 +109,6 @@ export const services: Service[] = [
         items: ["Booking management", "Scheduling", "Reports & analytics"],
         image: "/book.png",
         link: "/services/Operations&Booking_Platform",
-        icon: "",
+        icon: "/icons8-book.gif",
     },
 ];
