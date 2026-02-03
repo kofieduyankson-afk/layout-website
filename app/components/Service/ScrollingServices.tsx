@@ -11,7 +11,7 @@ export default function ScrollingServices() {
 
             <div className="flex overflow-x-auto gap-6 pb-4 scrollbar-hide">
                 {services.map((service) => (
-                    <ServiceCard key={service.id} service={service} />
+                    <ServiceCard key={service.title} service={service} />
                 ))}
             </div>
         </section>
