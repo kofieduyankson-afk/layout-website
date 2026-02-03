@@ -76,8 +76,14 @@ export default function NavBar() {
 function MegaMenu({
     items,
 }: {
-    items: { title: string; icon: string; href: string }[];
+    items: {
+        title: string;
+        icon: string;
+        animated_icon?: string;
+        href: string;
+    }[];
 }) {
+
     return (
         <div className="absolute left-0 right-0 top-full bg-[#17a28f] shadow-xl">
             <div className="mx-auto max-w-7xl px-6 py-8">
@@ -88,7 +94,20 @@ function MegaMenu({
                             href={item.href}
                             className="flex items-center gap-3 rounded-lg p-3 hover:bg-gray-100 transition"
                         >
-                            <span className="text-2xl">{item.icon}</span>
+                            {item.animated_icon ? (
+                                <div className="w-8 h-8 flex items-center justify-center">
+                                    <Image
+                                        src={item.animated_icon}
+                                        alt={item.title}
+                                        width={32}
+                                        height={32}
+                                        className="object-contain"
+                                    />
+                                </div>
+                            ) : (
+                                <span className="text-2xl">{item.icon}</span>
+                            )}
+
                             <span className="font-medium text-gray-800">
                                 {item.title}
                             </span>

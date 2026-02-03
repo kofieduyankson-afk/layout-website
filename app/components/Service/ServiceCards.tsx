@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { Service } from "../../data/servicesData";
 import Link from "next/link";
+import Image from "next/image";
+
 
 interface Props {
     service: Service;
@@ -26,12 +28,27 @@ export default function ServiceCard({ service }: Props) {
 
                 {/* Card content */}
                 <div className="relative z-10 flex flex-col items-center text-center">
-                    {/* Emoji / icon */}
-                    <div
-                        className={`w-16 h-16 mb-4 flex items-center justify-center text-3xl rounded-2xl shadow-lg ${service.iconGradient}`}
-                    >
-                        {service.emoji}
-                    </div>
+                    {/* Icon / Emoji */}
+                    {service.icon ? (
+                        <div
+                            className={`w-16 h-16 ${service.iconGradient} rounded-2xl mb-4 shadow-lg overflow-hidden flex items-center justify-center`}
+                        >
+                            <Image
+                                src={service.icon}
+                                alt={service.title}
+                                width={64}
+                                height={64}
+                                className="object-contain"
+                            />
+                        </div>
+                    ) : service.emoji ? (
+                        <div
+                            className={`w-16 h-16 ${service.iconGradient} rounded-2xl flex items-center justify-center text-3xl mb-4 shadow-lg`}
+                        >
+                            {service.emoji}
+                        </div>
+                    ) : null}
+
 
                     {/* Title */}
                     <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-teal-600 transition-colors duration-300">

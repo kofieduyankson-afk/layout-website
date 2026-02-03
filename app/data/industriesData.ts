@@ -20,7 +20,7 @@ export const industries: Industry[] = [
         iconGradient: "bg-gradient-to-br from-red-500 to-pink-500",
         image: "/auto.jpg",
         link: "/industries/Automotive",
-        icon: "",
+        icon: "/icons8-car.gif",
     },
     {
         id: 2,
@@ -31,7 +31,7 @@ export const industries: Industry[] = [
         iconGradient: "bg-gradient-to-br from-blue-500 to-indigo-500",
         image: "/finance.jpg",
         link: "/industries/Banking&Finance",
-        icon: "",
+        icon: "/icons8-money-box.gif",
     },
     {
         id: 3,
@@ -42,7 +42,7 @@ export const industries: Industry[] = [
         iconGradient: "bg-gradient-to-br from-green-500 to-teal-500",
         image: "/shared.jpg",
         link: "/industries/Shared_Mobility",
-        icon: "",
+        icon: "/icons8-bus.gif",
     },
     {
         id: 4,
@@ -53,7 +53,7 @@ export const industries: Industry[] = [
         iconGradient: "bg-gradient-to-br from-yellow-500 to-orange-500",
         image: "/logistics.jpg",
         link: "/industries/Logistics",
-        icon: "",
+        icon: "/icons8-logistics.gif",
     },
     {
         id: 5,
@@ -64,7 +64,7 @@ export const industries: Industry[] = [
         iconGradient: "bg-gradient-to-br from-emerald-500 to-lime-500",
         image: "/electric.jpg",
         link: "/industries/Electric_Mobility",
-        icon: "",
+        icon: "/icons8-lightning-bolt.gif",
     },
     {
         id: 6,
@@ -75,7 +75,7 @@ export const industries: Industry[] = [
         iconGradient: "bg-gradient-to-br from-purple-500 to-pink-500",
         image: "/e-commerce.jpg",
         link: "/industries/E-commerce",
-        icon: "",
+        icon: "/icons8-cart.gif",
     },
     {
         id: 7,
@@ -86,7 +86,7 @@ export const industries: Industry[] = [
         iconGradient: "bg-gradient-to-br from-blue-400 to-indigo-500",
         image: "/saas.jpg",
         link: "/industries/SaaS",
-        icon: "",
+        icon: "/icons8-add-to-cloud.gif",
     },
     {
         id: 8,
@@ -97,7 +97,7 @@ export const industries: Industry[] = [
         iconGradient: "bg-gradient-to-br from-red-400 to-orange-500",
         image: "/demand.png",
         link: "/industries/On-Demand",
-        icon: "",
+        icon: "/icons8-clock.gif",
     },
     {
         id: 9,
@@ -108,7 +108,7 @@ export const industries: Industry[] = [
         iconGradient: "bg-gradient-to-br from-teal-500 to-cyan-500",
         image: "/healthcare.jpg",
         link: "/industries/Healthcare",
-        icon: "",
+        icon: "/icons8-pill.gif",
     },
     {
         id: 10,
@@ -119,7 +119,7 @@ export const industries: Industry[] = [
         iconGradient: "bg-gradient-to-br from-blue-600 to-indigo-700",
         image: "/fintech.png",
         link: "/industries/FinTech",
-        icon: "",
+        icon: "/icons8-debit-card.gif",
     },
     {
         id: 11,
@@ -129,7 +129,7 @@ export const industries: Industry[] = [
         emoji: "🏠",
         iconGradient: "bg-gradient-to-br from-amber-500 to-orange-500",
         image: "/estate.jpg",
-        link: "/industries/Real-Estate",
+        link: "/industries/Real_Estate",
         icon: "/real-estate.gif",
     },
 ];

@@ -7,6 +7,7 @@ export interface Service {
     items?: string[];
     image?: string;
     link?: string;
+    icon?: string;
 }
 
 export const services: Service[] = [
@@ -18,6 +19,7 @@ export const services: Service[] = [
         items: ["Frontend development", "Backend development", "Fullstack solutions"],
         image: "/webdev.jpg",
         link: "/services/Web_Development",
+        icon: "",
     },
     {
         title: "App Development",
@@ -27,6 +29,7 @@ export const services: Service[] = [
         items: ["iOS apps", "Android apps", "Cross-platform apps"],
         image: "/apps.jpg",
         link: "/services/App_Development",
+        icon: "",
     },
     {
         title: "Software Development",
@@ -36,6 +39,7 @@ export const services: Service[] = [
         items: ["Desktop software", "Enterprise software", "Automation tools"],
         image: "/app.jpg",
         link: "/services/Software_Development",
+        icon: "/icons8-backend-development.gif",
     },
     {
         title: "Web Design",
@@ -45,6 +49,7 @@ export const services: Service[] = [
         items: ["UI/UX design", "Responsive design", "Brand-focused visuals"],
         image: "/web.jpg",
         link: "/services/Web_Design",
+        icon: "/web-design.gif",
     },
     {
         title: "WhatsApp Business API",
@@ -54,6 +59,7 @@ export const services: Service[] = [
         items: ["Automated messaging", "Customer support integration", "Notifications"],
         image: "/whatsapp.jpg",
         link: "/services/Whatsapp_Business_API",
+        icon: "/appicons8-whatsapp.gif",
     },
     {
         title: "IT Solutions",
@@ -63,6 +69,7 @@ export const services: Service[] = [
         items: ["System integration", "Infrastructure management", "Cybersecurity solutions", "IT support & maintenance"],
         image: "/ITS.jpg",
         link: "/services/IT_Solutions",
+        icon: "",
     },
     {
         title: "IT Support & Maintenance",
@@ -72,6 +79,7 @@ export const services: Service[] = [
         items: ["Hardware & software support", "Network monitoring", "Troubleshooting"],
         image: "/IT.jpg",
         link: "/services/IT_Support_Maintenace",
+        icon: "",
     },
     {
         title: "Graphic Design",
@@ -81,6 +89,7 @@ export const services: Service[] = [
         items: ["Logo design", "Marketing graphics", "Social media creatives"],
         image: "/graphicc.jpg",
         link: "/services/Graphic_Design",
+        icon: "",
     },
     {
         title: "SaaS",
@@ -90,6 +99,7 @@ export const services: Service[] = [
         items: ["Web apps", "Mobile apps", "Cloud hosting"],
         image: "/saas.jpg",
         link: "/services/saas",
+        icon: "",
     },
     {
         title: "Operations & Booking Platform",
@@ -99,5 +109,6 @@ export const services: Service[] = [
         items: ["Booking management", "Scheduling", "Reports & analytics"],
         image: "/book.png",
         link: "/services/Operations&Booking_Platform",
+        icon: "",
     },
 ];
