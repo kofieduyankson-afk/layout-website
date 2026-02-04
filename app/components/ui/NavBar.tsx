@@ -92,8 +92,9 @@ function MegaMenu({
                         <Link
                             key={item.title}
                             href={item.href}
-                            className="flex items-center gap-3 rounded-lg p-3 hover:bg-gray-100 transition"
+                            className="group flex items-center gap-3 rounded-lg p-3 transition hover:bg-gray-100"
                         >
+
                             {item.animated_icon ? (
                                 <div className="w-8 h-8 flex items-center justify-center">
                                     <Image
@@ -101,16 +102,17 @@ function MegaMenu({
                                         alt={item.title}
                                         width={32}
                                         height={32}
-                                        className="object-contain"
+                                        className="object-contain mix-blend-multiply"
                                     />
                                 </div>
                             ) : (
                                 <span className="text-2xl">{item.icon}</span>
                             )}
 
-                            <span className="font-medium text-gray-800">
+                            <span className="font-medium text-white transition-colors group-hover:text-[#262e31]">
                                 {item.title}
                             </span>
+
                         </Link>
                     ))}
                 </div>
