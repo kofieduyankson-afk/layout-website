@@ -38,7 +38,7 @@ export default function SaaSIndustryPage() {
 
             {/* Items */}
             <section className="max-w-7xl mx-auto px-6 py-20 relative bg-cover bg-center " style={{
-                backgroundImage: "url('/Saas.jpg.jpg')"
+                backgroundImage: "url('/Saas.jpg')"
             }}>
                 <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
                     {data.items.map((item) => (
