@@ -34,3 +34,11 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.lottie-player,
+dotlottie-player,
+canvas,
+svg {
+  width: 100% !important;
+  height: 100% !important;
+}

@@ -55,7 +55,7 @@ export const navServices: NavService[] = [
         animated_icon: "/icons8-design.gif",
     },
     {
-        title: "Operations and Booking Platform",
+        title: "Operations & Booking Platform",
         icon: "📅", // scheduling, bookings
         href: "/services/Operations&Booking_Platform",
         animated_icon: "/icons8-book.gif",

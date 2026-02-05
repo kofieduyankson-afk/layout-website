@@ -11,6 +11,9 @@ import { useState } from "react";
 type MenuType = "services" | "industries" | null;
 
 export default function NavBar() {
+    const [mobileOpen, setMobileOpen] = useState(false);
+    const [mobileSubMenu, setMobileSubMenu] = useState<MenuType>(null);
+
     const [openMenu, setOpenMenu] = useState<MenuType>(null);
 
     return (
@@ -25,14 +28,14 @@ export default function NavBar() {
                         <Image
                             src="/layoutircon.png"
                             alt="Layout Laurate LLC Logo"
-                            width={40}
-                            height={40}
+                            width={70}
+                            height={60}
                             className="object-contain"
                         />
                         <span className="text-xl font-bold text-white">Layout Laurate LLC</span>
                     </Link>
 
-                    <div className="flex items-center gap-8">
+                    <div className="hidden md:flex items-center gap-8">
                         {/* SERVICES */}
                         <span
                             onMouseEnter={() => setOpenMenu("services")}
@@ -57,6 +60,14 @@ export default function NavBar() {
                             Contact Us
                         </Link>
                     </div>
+                    {/* MOBILE MENU BUTTON (shows below md) */}
+                    <button
+                        onClick={() => setMobileOpen(!mobileOpen)}
+                        className="md:hidden text-white text-3xl"
+                        aria-label="Open menu"
+                    >
+                        ☰
+                    </button>
                 </div>
 
                 {/* SERVICES MEGA MENU */}
@@ -85,16 +96,18 @@ function MegaMenu({
 }) {
 
     return (
-        <div className="absolute left-0 right-0 top-full bg-[#17a28f] shadow-xl">
+        <div className="absolute left-0 right-0 top-full bg-[#17a28f] ">
             <div className="mx-auto max-w-7xl px-6 py-8">
-                <div className="grid grid-cols-4 gap-6">
+                <div className="grid grid-cols-5 gap-3 justify-items-center">
+
                     {items.map((item) => (
                         <Link
                             key={item.title}
                             href={item.href}
-                            className="group flex items-center gap-3 rounded-lg p-3 transition hover:bg-gray-100"
-                        >
+                            className="group flex flex-col items-center justify-center text-center gap-2
+                 rounded-lg p-3 w-full sm:w-auto sm:max-w-[160px] transition hover:bg-gray-100"
 
+                        >
                             {item.animated_icon ? (
                                 <div className="w-8 h-8 flex items-center justify-center">
                                     <Image
@@ -108,14 +121,13 @@ function MegaMenu({
                             ) : (
                                 <span className="text-2xl">{item.icon}</span>
                             )}
-
                             <span className="font-medium text-white transition-colors group-hover:text-[#262e31]">
                                 {item.title}
                             </span>
-
                         </Link>
                     ))}
                 </div>
+
             </div>
         </div>
     );

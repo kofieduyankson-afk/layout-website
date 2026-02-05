@@ -1,35 +1,43 @@
 import ServicesGrid from "./components/Service/ServiceGrid";
 import IndustriesGrid from "./components/Industry/IndustryGrid";
+import AnimatedBackground from "./components/ui/AnimatedBackground";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import HeroLottie from "./components/ui/HeroLottie";
+
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
 
-      {/* Hero */}
-      <section
-        className="relative w-full h-screen bg-cover bg-center bg-no-repeat shadow-md"
-        style={{ backgroundImage: "url('/blacker.jpg')" }}
-      >
-        <div className="absolute inset-0 bg-black/40"></div>
+      <section className="relative w-full h-screen shadow-md overflow-hidden">
 
+        {/* Lottie background */}
+        <HeroLottie />
+
+
+
+        {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-          <h1 className="text-3xl font-medium text-white mb-2 sm:text-4xl">
+          <h1 className="text-3xl font-medium text-gray-200 mb-2 sm:text-4xl">
             Layout Laurate LLC
           </h1>
-          <h1 className="text-5xl font-bold mb-4 text-white sm:text-6xl">
+
+          <h1 className="text-5xl font-bold mb-4 text-gray-200 sm:text-6xl">
             Building Digital Solutions
           </h1>
+
           <p className="text-gray-200 text-lg sm:text-xl max-w-2xl">
             Modern IT services for modern businesses
           </p>
         </div>
+
       </section>
 
       {/* Services Intro Section */}
       <section className="py-16 px-4 shadow-md">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8">
 
-          {/* Left Column: Text */}
+          {/* Left Column: Text  */}
           <div className="lg:w-2/3 text-center lg:text-left">
             <h2 className="text-3xl font-bold mb-4 text-center lg:text-left text-[#262e31]">
               Located in Accra, Providing Services Worldwide
@@ -43,11 +51,12 @@ export default function Home() {
 
           {/* Right Column: Image */}
           <div className="lg:w-1/3 flex justify-end">
-            <img
-              src="/km.png"
-              alt="Services Illustration"
-              className="w-full h-auto rounded-lg object-cover"
-            />
+            {/* <DotLottieReact
+              src="/bg/TEchnology.lottie.lottie"
+              autoplay
+              loop
+              className="w-full h-full object-cover"
+            /> */}
           </div>
 
         </div>

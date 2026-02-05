@@ -10,7 +10,7 @@ export default function About() {
 
             {/* Hero Section */}
             <section className="relative px-6 pt-32 pb-16 text-center relative bg-cover bg-center bg-gradient-to-br from-[#17a28f]/70 to-[#262e31]/70"
-                style={{ backgroundImage: "url('/about.jpg')" }}>
+                style={{ backgroundImage: "url('/background/about.jpg')" }}>
                 <div className="max-w-3xl mx-auto text-white">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">
                         About Us

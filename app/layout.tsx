@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/ui/NavBar";
 import Footer from "./components/ui/Footer";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +31,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NavBar />
+        <Script
+          src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"
+          strategy="beforeInteractive"
+        />
         {children}
         <Footer></Footer>
       </body>
