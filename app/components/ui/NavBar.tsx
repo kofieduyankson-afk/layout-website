@@ -31,7 +31,7 @@ export default function NavBar() {
     return (
         <nav
             ref={navRef}
-            className="fixed top-0 left-0 z-50 w-full bg-[#17a28f] shadow-md"
+            className="fixed top-0 left-0 z-50 w-full bg-white shadow-md"
             onMouseLeave={() => setOpenMenu(null)} // desktop hover
         >
             <div className="relative mx-auto max-w-7xl px-6">
@@ -45,27 +45,27 @@ export default function NavBar() {
                             height={50}
                             className="object-contain"
                         />
-                        <span className="text-xl font-bold text-white">Layout Laurate LLC</span>
+                        <span className="text-xl font-bold text-[#262e31]">Layout Laurate LLC</span>
                     </Link>
 
                     {/* DESKTOP MENU */}
                     <div className="hidden md:flex items-center gap-8">
                         <span
                             onMouseEnter={() => setOpenMenu("services")}
-                            className="cursor-pointer text-white/90 hover:text-[#262e31]"
+                            className="cursor-pointer text-[#262e31] hover:text-[#262e31]"
                         >
                             Services
                         </span>
                         <span
                             onMouseEnter={() => setOpenMenu("industries")}
-                            className="cursor-pointer text-white/90 hover:text-[#262e31]"
+                            className="cursor-pointer text-[#262e31] hover:text-[#262e31]"
                         >
                             Industries
                         </span>
-                        <Link href="/about" className="text-white/90 hover:text-[#262e31]">
+                        <Link href="/about" className="text-[#262e31] hover:text-[#262e31]">
                             About Us
                         </Link>
-                        <Link href="/contact" className="text-white/90 hover:text-[#262e31]">
+                        <Link href="/contact" className="text-[#262e31] hover:text-[#262e31]">
                             Contact Us
                         </Link>
                     </div>
