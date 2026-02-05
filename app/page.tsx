@@ -9,7 +9,7 @@ export default function Home() {
     <main className="min-h-screen bg-white pt-8">
 
       {/* Hero Section with Vanta */}
-      <section className="relative bg-[#17a28f] w-full h-screen shadow-md overflow-hidden">
+      <section className="relative bg-[#17a28f] w-full h-[60vh] sm:h-screen shadow-md overflow-hidden">
         <AnimatedBackground />
 
         {/* Hero Content */}

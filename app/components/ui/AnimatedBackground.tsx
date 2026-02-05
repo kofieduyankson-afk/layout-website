@@ -39,7 +39,7 @@ export default function AnimatedBackground() {
                         minWidth: 200.0,
                         scale: 1.0,
                         scaleMobile: 1.0,
-                        color: 0x1a1214,
+                        color: 0x262e31,
                         backgroundColor: 0x17a28f,
                     });
                 }
