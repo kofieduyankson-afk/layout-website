@@ -14,7 +14,7 @@ export default function IndustriesCard({ industry }: Props) {
     const [hover, setHover] = useState(false);
 
     return (
-        <Link href={industry.link || "#"} passHref>
+        <Link href={industry.link || "#"}>
             <motion.div
                 className="group relative w-full p-6 bg-white rounded-2xl shadow-lg cursor-pointer overflow-hidden border border-gray-100"
                 onHoverStart={() => setHover(true)}
@@ -23,19 +23,23 @@ export default function IndustriesCard({ industry }: Props) {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
             >
-                {/* Hover background image */}
+                {/* Hover background image (desktop only) */}
                 {industry.image && (
                     <div
-                        className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-10 transition-opacity duration-300"
+                        className="
+                          absolute inset-0 bg-cover bg-center
+                          opacity-0 md:group-hover:opacity-10
+                          transition-opacity duration-300
+                        "
                         style={{ backgroundImage: `url(${industry.image})` }}
-                    ></div>
+                    />
                 )}
 
                 <div className="relative z-10 flex flex-col items-center text-center">
-                    {/* Icon / Emoji */}
+                    {/* Icon */}
                     {industry.icon ? (
                         <div
-                            className={`w-16 h-16 ${industry.iconGradient} rounded-2xl mb-4 shadow-lg overflow-hidden flex items-center justify-center`}
+                            className={`w-16 h-16 ${industry.iconGradient} rounded-2xl mb-4 shadow-lg flex items-center justify-center`}
                         >
                             <Image
                                 src={industry.icon}
@@ -54,26 +58,38 @@ export default function IndustriesCard({ industry }: Props) {
                     ) : null}
 
                     {/* Title */}
-                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-teal-600 transition-colors duration-300">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2 md:group-hover:text-teal-600 transition-colors">
                         {industry.title}
                     </h3>
 
                     {/* Description */}
                     <motion.p
-                        className="text-sm text-gray-600"
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: hover ? 1 : 0, y: hover ? 0 : 10 }}
+                        className="
+                          text-sm text-gray-600
+                          opacity-100 translate-y-0
+                          md:opacity-0 md:group-hover:opacity-100
+                          md:group-hover:translate-y-0
+                        "
+                        initial={false}
+                        animate={{
+                            opacity: hover ? 1 : 0,
+                            y: hover ? 0 : 10,
+                        }}
                         transition={{ duration: 0.3 }}
                     >
                         {industry.description}
                     </motion.p>
                 </div>
 
-                {/* Gradient overlay on hover */}
+                {/* Gradient overlay (desktop hover only) */}
                 {industry.iconGradient && (
                     <div
-                        className={`absolute inset-0 ${industry.iconGradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300 rounded-2xl`}
-                    ></div>
+                        className={`
+                          absolute inset-0 ${industry.iconGradient}
+                          opacity-0 md:group-hover:opacity-5
+                          transition-opacity duration-300 rounded-2xl
+                        `}
+                    />
                 )}
             </motion.div>
         </Link>

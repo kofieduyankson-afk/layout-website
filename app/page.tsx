@@ -90,10 +90,16 @@ export default function Home() {
 
       {/* About / CTA Section */}
       <section
-        className="relative w-full px-6 py-16 text-white text-center rounded-t-3xl bg-cover bg-center"
-        style={{ backgroundImage: "url('/about3.png')" }}
+        className="relative w-full px-6 py-16 text-white text-center rounded-t-3xl overflow-hidden"
       >
-        <div className="absolute inset-0 bg-[#17a28f]/70 rounded-t-3xl"></div>
+        {/* Hero Lottie as background, fits section and upside down */}
+        <HeroLottie />
+
+
+        {/* Optional overlay for better contrast */}
+        <div className="absolute inset-0 bg-[#17a28f]/50 rounded-t-3xl"></div>
+
+        {/* Content */}
         <div className="relative z-10 max-w-3xl mx-auto">
           <h2 className="text-3xl font-semibold mb-4">
             We understand that every business is unique, which is why we offer a personalized approach to consulting.
@@ -106,6 +112,7 @@ export default function Home() {
           </a>
         </div>
       </section>
+
 
     </main>
   );
