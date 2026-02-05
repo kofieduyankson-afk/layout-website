@@ -1,6 +1,6 @@
 import ServicesGrid from "./components/Service/ServiceGrid";
 import IndustriesGrid from "./components/Industry/IndustryGrid";
-import AnimatedBackground from "./components/ui/AnimatedBackground";
+// import AnimatedBackground from "./components/ui/AnimatedBackground";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import HeroLottie from "./components/ui/HeroLottie";
 
