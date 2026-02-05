@@ -94,41 +94,46 @@ function MegaMenu({
         href: string;
     }[];
 }) {
-
     return (
-        <div className="absolute left-0 right-0 top-full bg-[#17a28f] ">
+        <div className="absolute left-0 right-0 top-full bg-[#17a28f]">
             <div className="mx-auto max-w-7xl px-6 py-8">
-                <div className="grid grid-cols-5 gap-3 justify-items-center">
+                <div className="grid grid-cols-3 md:grid-cols-5 gap-3 justify-items-center">
+                    {items.map((item, index) => {
+                        const isLastItem = index === items.length - 1;
 
-                    {items.map((item) => (
-                        <Link
-                            key={item.title}
-                            href={item.href}
-                            className="group flex flex-col items-center justify-center text-center gap-2
-                 rounded-lg p-3 w-full sm:w-auto sm:max-w-[160px] transition hover:bg-gray-100"
+                        return (
+                            <Link
+                                key={item.title}
+                                href={item.href}
+                                className={`group flex flex-col items-center justify-center text-center gap-2
+                  rounded-lg p-3 w-full sm:w-auto sm:max-w-[160px]
+                  transition hover:bg-gray-100
+                  ${isLastItem ? "col-start-2 md:col-3" : ""}
+                `}
+                            >
+                                {item.animated_icon ? (
+                                    <div className="w-8 h-8 flex items-center justify-center">
+                                        <Image
+                                            src={item.animated_icon}
+                                            alt={item.title}
+                                            width={32}
+                                            height={32}
+                                            className="object-contain mix-blend-multiply"
+                                        />
+                                    </div>
+                                ) : (
+                                    <span className="text-2xl">{item.icon}</span>
+                                )}
 
-                        >
-                            {item.animated_icon ? (
-                                <div className="w-8 h-8 flex items-center justify-center">
-                                    <Image
-                                        src={item.animated_icon}
-                                        alt={item.title}
-                                        width={32}
-                                        height={32}
-                                        className="object-contain mix-blend-multiply"
-                                    />
-                                </div>
-                            ) : (
-                                <span className="text-2xl">{item.icon}</span>
-                            )}
-                            <span className="font-medium text-white transition-colors group-hover:text-[#262e31]">
-                                {item.title}
-                            </span>
-                        </Link>
-                    ))}
+                                <span className="font-medium text-white transition-colors group-hover:text-[#262e31]">
+                                    {item.title}
+                                </span>
+                            </Link>
+                        );
+                    })}
                 </div>
-
             </div>
         </div>
     );
 }
+
