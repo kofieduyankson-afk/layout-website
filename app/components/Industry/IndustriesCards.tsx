@@ -63,22 +63,9 @@ export default function IndustriesCard({ industry }: Props) {
                     </h3>
 
                     {/* Description */}
-                    <motion.p
-                        className="
-                          text-sm text-gray-600
-                          opacity-100 translate-y-0
-                          md:opacity-0 md:group-hover:opacity-100
-                          md:group-hover:translate-y-0
-                        "
-                        initial={false}
-                        animate={{
-                            opacity: hover ? 1 : 0,
-                            y: hover ? 0 : 10,
-                        }}
-                        transition={{ duration: 0.3 }}
-                    >
-                        {industry.description}
-                    </motion.p>
+                    <p className="text-gray-600 text-sm mb-4"> {industry.description}</p>
+
+
                 </div>
 
                 {/* Gradient overlay (desktop hover only) */}
