@@ -6,7 +6,10 @@ import { navServices } from "@/app/data/navServices";
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
-
+// colors
+// teal [#17a28f] 17a28f
+// gray-white text  gray-200
+// dark-gray [#262e31] #262e31
 type MenuType = "services" | "industries" | null;
 
 export default function NavBar() {

@@ -2,6 +2,7 @@
 
 "use client";
 
+import ServicesGrid from "../components/Service/ServiceGrid";
 import ServicesCard from "../components/ui/ExpandCard";
 import { services } from "../data/detailedService";
 
@@ -20,24 +21,9 @@ export default function Services() {
             </section>
 
             {/* Detailed Service Cards*/}
-            <section className="px-6 pb-24">
-                <div className="mx-auto max-w-7xl">
-                    <div
-                        className="
-              grid gap-6
-              grid-cols-1
-              sm:grid-cols-2
-              lg:grid-cols-3
-            "
-                    >
-                        {services.map((service) => (
-                            <ServicesCard
-                                key={service.title}
-                                service={service}
-                            />
-                        ))}
-                    </div>
-                </div>
+            <section className="py-16 px-4 shadow-md">
+
+                <ServicesGrid />
             </section>
         </main>
     );

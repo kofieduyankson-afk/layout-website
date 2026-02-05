@@ -3,6 +3,7 @@
 "use client";
 
 import IndustriesCard from "../components/Card/ExpandIndustryCard";
+import IndustriesGrid from "../components/Industry/IndustryGrid";
 import { industries } from "../data/detailedIndustries";
 
 export default function Industries() {
@@ -20,24 +21,9 @@ export default function Industries() {
             </section>
 
             {/* Detqailed Industry Cards */}
-            <section className="px-6 pb-24">
-                <div className="mx-auto max-w-7xl">
-                    <div
-                        className="
-              grid gap-6
-              grid-cols-1
-              sm:grid-cols-2
-              lg:grid-cols-3
-            "
-                    >
-                        {industries.map((industry) => (
-                            <IndustriesCard
-                                key={industry.title}
-                                industry={industry}
-                            />
-                        ))}
-                    </div>
-                </div>
+            <section className="py-16 px-4 shadow-md">
+
+                <IndustriesGrid />
             </section>
         </main>
     );
