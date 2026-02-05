@@ -66,7 +66,7 @@ export default function NavBar() {
                         className="md:hidden text-white text-3xl"
                         aria-label="Open menu"
                     >
-                        ☰
+                        Image
                     </button>
                 </div>
 

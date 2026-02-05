@@ -35,10 +35,15 @@ body {
   scrollbar-width: none;
 }
 
-.lottie-player,
-dotlottie-player,
-canvas,
-svg {
-  width: 100% !important;
-  height: 100% !important;
+/* Only Lottie backgrounds should stretch */
+.lottie-bg,
+.lottie-bg canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/* If needed for dotlottie player only */
+.lottie-bg dotlottie-player {
+  width: 100%;
+  height: 100%;
 }
