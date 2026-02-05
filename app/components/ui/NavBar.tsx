@@ -18,7 +18,7 @@ export default function NavBar() {
 
     return (
         <nav
-            className="fixed top-0 left-0 z-50 w-full bg-[#17a28f] shadow-md"
+            className="fixed top-0 left-0 z-50 w-full bg-[#17a28f] "
             onMouseLeave={() => setOpenMenu(null)}
         >
             <div className="relative mx-auto max-w-7xl px-6">
@@ -94,12 +94,31 @@ function MegaMenu({
         href: string;
     }[];
 }) {
+    const cols = 3;
+    const remainder = items.length % cols;
+
     return (
         <div className="absolute left-0 right-0 top-full bg-[#17a28f]">
             <div className="mx-auto max-w-7xl px-6 py-8">
                 <div className="grid grid-cols-3 md:grid-cols-5 gap-3 justify-items-center">
                     {items.map((item, index) => {
-                        const isLastItem = index === items.length - 1;
+                        const isLastRow =
+                            remainder !== 0 && index >= items.length - remainder;
+
+                        let mobileColClass = "";
+
+                        if (isLastRow) {
+                            if (remainder === 1) {
+                                mobileColClass = "col-start-2";
+                            }
+
+                            if (remainder === 2) {
+                                mobileColClass =
+                                    index === items.length - 2
+                                        ? "col-start-2"
+                                        : "col-start-3";
+                            }
+                        }
 
                         return (
                             <Link
@@ -108,7 +127,7 @@ function MegaMenu({
                                 className={`group flex flex-col items-center justify-center text-center gap-2
                   rounded-lg p-3 w-full sm:w-auto sm:max-w-[160px]
                   transition hover:bg-gray-100
-                  ${isLastItem ? "col-start-2 md:col-3" : ""}
+                  ${mobileColClass} md:col-auto
                 `}
                             >
                                 {item.animated_icon ? (
