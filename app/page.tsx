@@ -1,8 +1,11 @@
 import ServicesGrid from "./components/Service/ServiceGrid";
 import IndustriesGrid from "./components/Industry/IndustryGrid";
-import HeroLottie from "./components/ui/HeroLottie";
-import RightLottie from "./components/ui/RightLottie";
-import AnimatedBackground from "./components/ui/AnimatedBackground";
+import HeroLottie from "./components/ui/animation/HeroLottie";
+import RightLottie from "./components/ui/animation/RightLottie";
+import AnimatedBackground from "./components/ui/animation/AnimatedBackground";
+import ServicesBackground from "./components/ui/animation/ContentBackground";
+import ContentBackground from "./components/ui/animation/ContentBackground";
+import IntroBackground from "./components/ui/animation/IntroBackground";
 
 export default function Home() {
   return (
@@ -29,7 +32,9 @@ export default function Home() {
       </section>
 
       {/* Services Intro Section */}
-      <section className="py-16 px-4 sm:px-6 shadow-md">
+      <section className="relative py-12 sm:py-16 px-4 sm:px-6 shadow-md overflow-hidden">
+        {/* Background animation */}
+        <IntroBackground />
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8">
 
           {/* Left Column: Text */}
@@ -52,12 +57,17 @@ export default function Home() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 shadow-md">
+      <section className="relative py-12 sm:py-16 px-4 sm:px-6 shadow-md overflow-hidden">
+        {/* Background animation */}
+        <ContentBackground />
+
         <ServicesGrid />
       </section>
 
       {/* Industries Intro Section */}
-      <section className="py-16 px-4 sm:px-6 shadow-md">
+      <section className="relative py-12 sm:py-16 px-4 sm:px-6 shadow-md overflow-hidden">
+        {/* Background animation */}
+        <IntroBackground />
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8">
 
           {/* Left Column: Text */}
@@ -81,10 +91,14 @@ export default function Home() {
             />
           </div>
         </div>
+
       </section>
 
       {/* Industries Grid */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 shadow-md">
+      <section className="relative py-12 sm:py-16 px-4 sm:px-6 shadow-md overflow-hidden">
+        {/* Background animation */}
+        <ContentBackground />
+
         <IndustriesGrid />
       </section>
 
