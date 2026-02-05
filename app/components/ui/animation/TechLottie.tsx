@@ -2,14 +2,14 @@
 
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
-export default function RightLottie() {
+export default function TechLottie() {
     return (
-        <div className="absolute inset-0 w-full h-full">
+        <div className="absolute inset-0 pointer-events-none">
             <DotLottieReact
                 src="/bg/TEchnology.lottie"
                 autoplay
                 loop
-                className="w-full h-auto rounded-lg object-cover"
+                className="w-full h-full opacity-25"
             />
         </div>
     );

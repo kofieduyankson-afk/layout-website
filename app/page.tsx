@@ -1,11 +1,12 @@
 import ServicesGrid from "./components/Service/ServiceGrid";
 import IndustriesGrid from "./components/Industry/IndustryGrid";
 import HeroLottie from "./components/ui/animation/HeroLottie";
-import RightLottie from "./components/ui/animation/RightLottie";
+import RightLottie from "./components/ui/animation/TechLottie";
 import AnimatedBackground from "./components/ui/animation/AnimatedBackground";
 import ServicesBackground from "./components/ui/animation/ContentBackground";
 import ContentBackground from "./components/ui/animation/ContentBackground";
 import IntroBackground from "./components/ui/animation/IntroBackground";
+import TechLottie from "./components/ui/animation/TechLottie";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
 
       {/* Hero Section with Vanta */}
       <section className="relative bg-[#17a28f] w-full h-[60vh] sm:h-screen shadow-md overflow-hidden">
-        <AnimatedBackground />
+        {/* <AnimatedBackground /> */}
+        <TechLottie />
 
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6">
