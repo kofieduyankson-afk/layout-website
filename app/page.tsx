@@ -3,16 +3,20 @@ import IndustriesGrid from "./components/Industry/IndustryGrid";
 // import AnimatedBackground from "./components/ui/AnimatedBackground";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import HeroLottie from "./components/ui/HeroLottie";
-
+import RightLottie from "./components/ui/RightLottie";
+// colors 
+// teal [#17a28f] 17a28f
+// gray-white text  gray-200
+// dark-gray [#262e31] #262e31
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
 
-      <section className="relative w-full h-screen shadow-md overflow-hidden">
+      <section className="relative bg-[#17a28f] w-full h-screen shadow-md overflow-hidden">
 
         {/* Lottie background */}
-        <HeroLottie />
+        <RightLottie />
 
 
 
@@ -44,19 +48,14 @@ export default function Home() {
             </h2>
             <p className="text-[#262e31] leading-relaxed text-lg max-w-3xl lg:max-w-full">
               Our commitment to providing high-quality consulting services means that
-              we're always up-to-date on the latest industry trends and best practices,
+              we are always up-to-date on the latest industry trends and best practices,
               so you can trust that our solutions are effective and innovative.
             </p>
           </div>
 
           {/* Right Column: Image */}
           <div className="lg:w-1/3 flex justify-end">
-            {/* <DotLottieReact
-              src="/bg/TEchnology.lottie.lottie"
-              autoplay
-              loop
-              className="w-full h-full object-cover"
-            /> */}
+            {/* <RightLottie /> */}
           </div>
 
         </div>
