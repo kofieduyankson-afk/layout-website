@@ -1,73 +1,56 @@
-// "use client";
+"use client";
 
-// import { useEffect, useRef } from "react";
-// import Script from "next/script";
+import { useEffect, useRef } from "react";
 
-// export default function AnimatedBackground() {
-//     const vantaRef = useRef<HTMLDivElement | null>(null);
-//     const vantaEffect = useRef<any>(null);
+declare global {
+    interface Window {
+        VANTA: any;
+    }
+}
 
-//     useEffect(() => {
-//         if (
-//             typeof window !== "undefined" &&
-//             window.VANTA &&
-//             window.VANTA.NET &&
-//             window.THREE &&
-//             vantaRef.current &&
-//             !vantaEffect.current
-//         ) {
-//             vantaEffect.current = window.VANTA.NET({
-//                 el: vantaRef.current,
-//                 THREE: window.THREE,
+export default function AnimatedBackground() {
+    const vantaRef = useRef<HTMLDivElement>(null);
+    let vantaEffect: { destroy: () => void } | null = null;
 
-//                 mouseControls: true,
-//                 touchControls: true,
-//                 gyroControls: false,
+    useEffect(() => {
+        if (!vantaRef.current || typeof window === "undefined") return;
 
-//                 minHeight: 200,
-//                 minWidth: 200,
-//                 scale: 1,
-//                 scaleMobile: 1,
+        // Load three.min.js dynamically
+        const threeScript = document.createElement("script");
+        threeScript.src = "/bg/three.min.js";
+        threeScript.async = true;
+        document.body.appendChild(threeScript);
 
-//                 color: 0x1a1214,
-//                 backgroundColor: 0x17a28f,
-//             });
-//         }
+        // Load vanta.net.min.js after three.js
+        threeScript.onload = () => {
+            const vantaScript = document.createElement("script");
+            vantaScript.src = "/bg/vanta.net.min.js";
+            vantaScript.async = true;
+            document.body.appendChild(vantaScript);
 
-//         return () => {
-//             if (vantaEffect.current) {
-//                 vantaEffect.current.destroy();
-//                 vantaEffect.current = null;
-//             }
-//         };
-//     }, []);
+            vantaScript.onload = () => {
+                if (window.VANTA && vantaRef.current) {
+                    vantaEffect = window.VANTA.NET({
+                        el: vantaRef.current,
+                        mouseControls: true,
+                        touchControls: true,
+                        gyroControls: false,
+                        minHeight: 200.0,
+                        minWidth: 200.0,
+                        scale: 1.0,
+                        scaleMobile: 1.0,
+                        color: 0x1a1214,
+                        backgroundColor: 0x17a28f,
+                    });
+                }
+            };
+        };
 
-//     return (
-//         <>
-//             {/* Load local scripts */}
-//             <Script src="/bg/three.min.js" strategy="beforeInteractive" />
-//             <Script src="/bg/vanta.net.min.js" strategy="afterInteractive" />
+        return () => {
+            if (vantaEffect) vantaEffect.destroy();
+            document.body.removeChild(threeScript);
+        };
+    }, []);
 
-//             {/* Hero Section */}
-//             <section
-//                 ref={vantaRef}
-//                 className="relative w-full h-screen overflow-hidden"
-//             >
-//                 {/* Optional overlay for contrast */}
-//                 <div className="absolute inset-0 bg-black/30"></div>
-
-//                 <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-//                     <h1 className="text-3xl font-medium text-white mb-2 sm:text-4xl">
-//                         Layout Laurate LLC
-//                     </h1>
-//                     <h1 className="text-5xl font-bold mb-4 text-white sm:text-6xl">
-//                         Building Digital Solutions
-//                     </h1>
-//                     <p className="text-gray-100 text-lg sm:text-xl max-w-2xl">
-//                         Modern IT services for modern businesses
-//                     </p>
-//                 </div>
-//             </section>
-//         </>
-//     );
-// }
+    return <div ref={vantaRef} className="absolute inset-0 w-full h-full" />;
+}
