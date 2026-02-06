@@ -1,37 +1,42 @@
 import ServicesGrid from "./components/Service/ServiceGrid";
 import IndustriesGrid from "./components/Industry/IndustryGrid";
-import HeroLottie from "./components/ui/animation/HeroLottie";
+import HeroLottie from "./components/ui/animation/WaveLottie";
 import RightLottie from "./components/ui/animation/TechLottie";
 import AnimatedBackground from "./components/ui/animation/AnimatedBackground";
 import ServicesBackground from "./components/ui/animation/ContentBackground";
 import ContentBackground from "./components/ui/animation/ContentBackground";
 import IntroBackground from "./components/ui/animation/IntroBackground";
 import TechLottie from "./components/ui/animation/TechLottie";
-
+import AnimatedText from "./components/ui/animation/AnimatedText";
+import AnimatedTypingText from "./components/ui/animation/AnimatedText";
+// colors
+// teal [#17a28f] 17a28f
+// gray-white text  gray-200
+// dark-gray [#262e31] #262e31
 export default function Home() {
   return (
     <main className="min-h-screen bg-white pt-8">
 
-      {/* Hero Section with Vanta */}
-      <section className="relative bg-[#17a28f] w-full h-[60vh] sm:h-screen shadow-md overflow-hidden">
-        {/* <AnimatedBackground /> */}
-        <TechLottie />
 
-        {/* Hero Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6">
-          <h1 className="text-2xl sm:text-3xl font-medium text-gray-200 mb-2">
-            Layout Laurate LLC
-          </h1>
+      {/* Hero Section */}
+      <section className="relative w-full min-h-[60vh] sm:min-h-screen  overflow-hidden">
+        <div className="max-w-7xl mx-auto h-full px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 h-full items-center gap-8">
 
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-200">
-            Building Digital Solutions
-          </h1>
+            {/* LEFT: Typing Text */}
+            <div className="relative z-10 flex justify-center lg:justify-start">
+              <AnimatedText />
+            </div>
 
-          <p className="text-gray-200 text-base sm:text-lg max-w-xs sm:max-w-2xl">
-            Modern IT services for modern businesses
-          </p>
+            {/* RIGHT: Lottie Animation */}
+            <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[500px]">
+              <TechLottie />
+            </div>
+
+          </div>
         </div>
       </section>
+
 
       {/* Services Intro Section */}
       <section className="relative py-12 sm:py-16 px-4 sm:px-6 shadow-md overflow-hidden">

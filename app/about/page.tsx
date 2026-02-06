@@ -1,5 +1,7 @@
 "use client";
 
+import AnimatedBackground from "../components/ui/animation/AnimatedBackground";
+import OnlineBusinessLottie from "../components/ui/animation/OnlineBusinessLottie";
 import PartnersSlider from "../components/ui/partnersSlide";
 import TeamCard from "../components/ui/TeamCard";
 import { team } from "../data/teamData";
@@ -9,8 +11,8 @@ export default function About() {
         <main className="min-h-screen bg-white">
 
             {/* Hero Section */}
-            <section className="relative px-6 pt-32 pb-16 text-center relative bg-cover bg-center bg-gradient-to-br from-[#17a28f]/70 to-[#262e31]/70"
-                style={{ backgroundImage: "url('/background/about.jpg')" }}>
+            <section className="relative bg-[#17a28f] w-full h-[40vh] sm:h-screen shadow-md overflow-hidden">
+                <OnlineBusinessLottie />
                 <div className="max-w-3xl mx-auto text-white">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">
                         About Us

@@ -41,15 +41,15 @@ export default function NavBar() {
                         <Image
                             src="/layoutircon.png"
                             alt="Layout Laurate LLC Logo"
-                            width={60}
-                            height={50}
+                            width={80}
+                            height={80}
                             className="object-contain"
                         />
                         <span className="text-xl font-bold text-[#262e31]">Layout Laurate LLC</span>
                     </Link>
 
                     {/* DESKTOP MENU */}
-                    <div className="hidden md:flex items-center gap-8">
+                    <div className="hidden md:flex items-center font-bold gap-8">
                         <span
                             onMouseEnter={() => setOpenMenu("services")}
                             className="cursor-pointer text-[#262e31] hover:text-[#262e31]"
@@ -120,7 +120,7 @@ function MegaMenuServices({
     items: { title: string; icon: string; animated_icon?: string; href: string }[];
 }) {
     return (
-        <div className="absolute left-0 right-0 top-full bg-[#17a28f]">
+        <div className="absolute left-0 right-0 top-full bg-white shadow-md">
             <div className="mx-auto max-w-7xl px-6 py-8">
                 <div className="grid grid-cols-3 md:grid-cols-5 gap-3 justify-items-center">
                     {items.map((item) => (
@@ -144,7 +144,7 @@ function MegaMenuServices({
                             ) : (
                                 <span className="text-2xl">{item.icon}</span>
                             )}
-                            <span className="font-medium text-white group-hover:text-[#262e31]">
+                            <span className="font-medium text-[#262e31] group-hover:text-[#262e31]">
                                 {item.title}
                             </span>
                         </Link>
@@ -162,7 +162,7 @@ function MegaMenuIndustries({
     items: { title: string; icon: string; animated_icon?: string; href: string }[];
 }) {
     return (
-        <div className="absolute left-0 right-0 top-full bg-[#17a28f]">
+        <div className="absolute left-0 right-0 top-full bg-white shadow-md">
             <div className="mx-auto max-w-7xl px-6 py-8">
                 <div className="grid grid-cols-3 md:grid-cols-5 gap-3 justify-items-center">
                     {items.map((item, index) => (
@@ -187,7 +187,7 @@ function MegaMenuIndustries({
                             ) : (
                                 <span className="text-2xl">{item.icon}</span>
                             )}
-                            <span className="font-medium text-white group-hover:text-[#262e31]">
+                            <span className="font-medium text-[#262e31] group-hover:text-[#262e31]">
                                 {item.title}
                             </span>
                         </Link>

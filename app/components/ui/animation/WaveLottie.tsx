@@ -2,7 +2,7 @@
 
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
-export default function HeroLottie() {
+export default function WaveLottie() {
     return (
         <div className="absolute inset-0 w-full h-full">
             <DotLottieReact
