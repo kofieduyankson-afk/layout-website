@@ -60,7 +60,7 @@ const AnimatedText: React.FC = () => {
     return (
         <div className="flex flex-col justify-center min-h-[200px] font-sans p-8">
             {/* Line 1: The Typing Header */}
-            <h1 className="text-5xl font-extrabold text-slate-900 mb-2">
+            <h1 className="text-4xl sm:text-6xl font-extrabold text-slate-900 mb-2">
                 {line1}
                 <span className="inline-block w-[3px] h-[45px] bg-blue-600 ml-2 animate-pulse align-middle" />
             </h1>
@@ -68,7 +68,7 @@ const AnimatedText: React.FC = () => {
             {/* Line 2: The Fly-in/Fade-out Subtext */}
             <div className="relative h-10 overflow-hidden">
                 <p
-                    className={`text-2xl text-slate-500 transition-all duration-700 ease-in-out transform ${line2
+                    className={`text-2xl sm:test-5x1 text-slate-500 transition-all duration-700 ease-in-out transform ${line2
                         ? 'translate-y-0 opacity-100'
                         : 'translate-y-8 opacity-0'
                         }`}

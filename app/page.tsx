@@ -3,12 +3,13 @@ import IndustriesGrid from "./components/Industry/IndustryGrid";
 import HeroLottie from "./components/ui/animation/WaveLottie";
 import RightLottie from "./components/ui/animation/TechLottie";
 import AnimatedBackground from "./components/ui/animation/AnimatedBackground";
-import ServicesBackground from "./components/ui/animation/ContentBackground";
+import ServicesBackground, { IndustryAnimation } from "./components/ui/animation/ContentBackground";
 import ContentBackground from "./components/ui/animation/ContentBackground";
 import IntroBackground from "./components/ui/animation/IntroBackground";
 import TechLottie from "./components/ui/animation/TechLottie";
 import AnimatedText from "./components/ui/animation/AnimatedText";
 import AnimatedTypingText from "./components/ui/animation/AnimatedText";
+import OnlineBusinessLottie from "./components/ui/animation/OnlineBusinessLottie";
 // colors
 // teal [#17a28f] 17a28f
 // gray-white text  gray-200
@@ -19,7 +20,7 @@ export default function Home() {
 
 
       {/* Hero Section */}
-      <section className="relative w-full min-h-[60vh] sm:min-h-screen  overflow-hidden">
+      <section className="relative w-full min-h-[60vh] sm:min-h-screen overflow-hidden">
         <div className="max-w-7xl mx-auto h-full px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 h-full items-center gap-8">
 
@@ -38,30 +39,33 @@ export default function Home() {
       </section>
 
 
-      {/* Services Intro Section */}
-      <section className="relative py-12 sm:py-16 px-4 sm:px-6 shadow-md overflow-hidden">
-        {/* Background animation */}
+      <section className="relative py-16 px-4 sm:px-6 overflow-hidden bg-white shadow-md">
+        {/* Optional: Background animation */}
         <IntroBackground />
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8">
+
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
 
           {/* Left Column: Text */}
-          <div className="w-full lg:w-2/3 text-center lg:text-left">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-[#262e31]">
+          <div className="w-full lg:w-2/3 text-center lg:text-left space-y-6">
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#262e31]">
               Located in Accra, Providing Services Worldwide
             </h2>
-            <p className="text-[#262e31] leading-relaxed text-lg max-w-3xl lg:max-w-full">
+
+            <p className="text-xl sm:text-2xl text-[#262e31]/80 leading-relaxed max-w-3xl">
               Our commitment to providing high-quality consulting services means that
-              we are always up-to-date on the latest industry trends and best practices,
-              so you can trust that our solutions are effective and innovative.
+              we stay aligned with industry trends and best practices—so you get
+              innovative, effective, and reliable digital solutions.
             </p>
           </div>
 
-          {/* Right Column: Lottie */}
-          <div className="w-full lg:w-1/3 flex justify-center lg:justify-end mt-6 lg:mt-0">
-            {/* <RightLottie /> */}
+          {/* Right Column: Lottie Animation */}
+          <div className="relative w-full lg:w-1/3 h-[300px] sm:h-[400px] lg:h-[500px]">
+            <OnlineBusinessLottie />
           </div>
+
         </div>
       </section>
+
 
       {/* Services Grid */}
       <section className="relative py-12 sm:py-16 px-4 sm:px-6 shadow-md overflow-hidden">
@@ -72,34 +76,30 @@ export default function Home() {
       </section>
 
       {/* Industries Intro Section */}
-      <section className="relative py-12 sm:py-16 px-4 sm:px-6 shadow-md overflow-hidden">
-        {/* Background animation */}
+      <section className="relative py-16 px-4 sm:px-6 overflow-hidden bg-white shadow-md">
+        {/* Optional: Background animation */}
         <IntroBackground />
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8">
 
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
           {/* Left Column: Text */}
-          <div className="w-full lg:w-2/3 text-center lg:text-left">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-[#262e31]">
+          <div className="w-full lg:w-2/3 text-center lg:text-left space-y-6">
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#262e31]">
               Serving Diverse Industries Across Ghana
             </h2>
-            <p className="text-[#262e31] leading-relaxed text-lg max-w-3xl lg:max-w-full">
+            <p className="text-xl sm:text-2xl text-[#262e31] leading-relaxed max-w-3xl">
               By combining industry insights with cutting-edge technology, we deliver products
               and services that drive operational excellence, enhance customer engagement,
               and unlock new growth opportunities for businesses of all sizes.
             </p>
           </div>
 
-          {/* Right Column: Image / Illustration */}
-          <div className="w-full lg:w-1/3 flex justify-center lg:justify-end mt-6 lg:mt-0">
-            <img
-              src="/black.png"
-              alt="Industries Illustration"
-              className="w-full max-w-sm lg:max-w-full h-auto rounded-lg object-cover"
-            />
+          {/* Right Column: Image / Lottie Animation */}
+          <div className="relative w-full lg:w-1/3 h-[300px] sm:h-[400px] lg:h-[500px]">
+            <IndustryAnimation />
           </div>
         </div>
-
       </section>
+
 
       {/* Industries Grid */}
       <section className="relative py-12 sm:py-16 px-4 sm:px-6 shadow-md overflow-hidden">

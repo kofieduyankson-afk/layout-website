@@ -22,3 +22,18 @@ export default function ContentBackground() {
         </div>
     );
 }
+export function IndustryAnimation() {
+    return (
+        <div className="absolute inset-0 pointer-events-none">
+            <DotLottieReact
+                src="/bg/businessman computer.lottie"
+                autoplay
+                loop
+                className="
+                  w-full h-full
+                "
+            />
+        </div>
+    );
+}
+

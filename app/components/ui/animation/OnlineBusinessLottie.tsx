@@ -6,10 +6,10 @@ export default function TechLottie() {
     return (
         <div className="absolute inset-0 pointer-events-none">
             <DotLottieReact
-                src="/bg/Online Business.lottie"
+                src="/bg/Isometric internet shop.lottie"
                 autoplay
                 loop
-                className="w-full h-full opacity-25"
+                className="w-full h-full "
             />
         </div>
     );
