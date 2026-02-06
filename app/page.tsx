@@ -21,6 +21,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative w-full min-h-[60vh] sm:min-h-screen overflow-hidden">
+        <IntroBackground />
         <div className="max-w-7xl mx-auto h-full px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 h-full items-center gap-8">
 
