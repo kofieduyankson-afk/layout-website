@@ -58,25 +58,29 @@ const AnimatedText: React.FC = () => {
     }, [line1, isDeleting, phaseIndex]);
 
     return (
-        <div className="flex flex-col justify-center min-h-[200px] font-sans p-8">
-            {/* Line 1: The Typing Header */}
-            <h1 className="text-4xl sm:text-6xl font-extrabold text-slate-900 mb-2">
+        <div className="flex flex-col justify-center min-h-[260px] px-6 text-center lg:text-left space-y-6">
+
+
+
+            {/* Main Typing Headline */}
+            <h1 className="text-5xl sm:text-6xl font-extrabold text-[#262e31] leading-tight">
                 {line1}
-                <span className="inline-block w-[3px] h-[45px] bg-blue-600 ml-2 animate-pulse align-middle" />
+                <span className="inline-block w-[4px] h-[48px] bg-[#17a28f] ml-2 animate-pulse align-middle" />
             </h1>
 
-            {/* Line 2: The Fly-in/Fade-out Subtext */}
-            <div className="relative h-10 overflow-hidden">
+            {/* Sub headline (animated line 2) */}
+            <div className="relative h-14 overflow-hidden">
                 <p
-                    className={`text-2xl sm:test-5x1 text-slate-500 transition-all duration-700 ease-in-out transform ${line2
-                        ? 'translate-y-0 opacity-100'
-                        : 'translate-y-8 opacity-0'
-                        }`}
+                    className={`text-xl sm:text-2xl text-[#262e31]/70 leading-relaxed max-w-2xl transition-all duration-700 ease-out transform
+        ${line2 ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"}
+      `}
                 >
                     {line2}
                 </p>
             </div>
+
         </div>
+
     );
 };
 

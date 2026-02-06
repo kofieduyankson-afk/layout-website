@@ -10,6 +10,7 @@ export const partnersData: Partner[] = [
     { title: "Krontiva", image: "/krontivia.png" },
     { title: "Centrral Security", image: "/csd.png" },
     { title: "TicTok", image: "/tictok.png" },
+    { title: "Brosa", image: "/brosa.png" },
 
 
 
