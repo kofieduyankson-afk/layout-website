@@ -109,7 +109,7 @@ export default function Home() {
         className="relative w-full px-6 py-16 text-white text-center rounded-t-3xl overflow-hidden"
       >
         {/* Hero Lottie as background, fits section and upside down */}
-        <HeroLottie />
+        {/* <HeroLottie /> */}
 
 
         {/* Optional overlay for better contrast */}
