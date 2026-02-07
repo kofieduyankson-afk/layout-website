@@ -7,13 +7,42 @@ export interface IndustryItem {
 export interface Industry {
     title: string;
     description: string;
+
+    // NEW DYNAMIC FIELDS
+    category: string;
+    heroHeadlineStart: string;
+    heroHeadlineGradient: string;
+    content: string;
+    strategyTitleStart: string;
+    strategyTitleHighlight: string;
+    strategyList: string[];
+
     items: IndustryItem[];
 }
+
 export const industries: Industry[] = [
     {
         title: "Automotive",
+        category: "Mobility & Transportation",
         description:
             "Technology solutions tailored for automotive businesses, supporting digital sales, fleet operations, and service management.",
+
+        heroHeadlineStart: "Driving Digital Transformation",
+        heroHeadlineGradient: "in the Automotive Industry",
+
+        content:
+            "We help automotive businesses modernize operations through digital platforms that support fleet management, vehicle booking, and customer engagement. Our solutions improve visibility, efficiency, and scalability across automotive ecosystems.",
+
+        strategyTitleStart: "Our Automotive",
+        strategyTitleHighlight: "Technology Strategy",
+
+        strategyList: [
+            "Digitize fleet and vehicle operations",
+            "Enable real-time tracking and monitoring",
+            "Improve customer engagement platforms",
+            "Build scalable automotive systems",
+        ],
+
         items: [
             {
                 title: "Fleet Management Systems",
@@ -41,10 +70,29 @@ export const industries: Industry[] = [
             },
         ],
     },
+
     {
         title: "Banking & Finance",
+        category: "Financial Services",
         description:
             "Secure and scalable digital platforms for financial institutions, improving customer experience and operational efficiency.",
+
+        heroHeadlineStart: "Powering Secure",
+        heroHeadlineGradient: "Digital Banking Solutions",
+
+        content:
+            "We build secure, compliant, and scalable digital platforms for banks and financial institutions. From core banking systems to customer portals and payments, our solutions enhance efficiency and trust.",
+
+        strategyTitleStart: "Our Banking & Finance",
+        strategyTitleHighlight: "Digital Approach",
+
+        strategyList: [
+            "Develop secure core banking platforms",
+            "Enable digital payments and transactions",
+            "Improve customer self-service experiences",
+            "Ensure regulatory compliance and data protection",
+        ],
+
         items: [
             {
                 title: "Core Banking Systems",
@@ -72,10 +120,29 @@ export const industries: Industry[] = [
             },
         ],
     },
+
     {
         title: "Shared Mobility",
+        category: "Smart Mobility",
         description:
             "Smart mobility platforms designed to power ride-sharing, bike-sharing, and vehicle pooling services.",
+
+        heroHeadlineStart: "Building the Future of",
+        heroHeadlineGradient: "Shared Mobility",
+
+        content:
+            "We create shared mobility platforms that connect users, drivers, and vehicles in real time. Our systems enable tracking, analytics, and seamless user experiences for modern mobility services.",
+
+        strategyTitleStart: "Our Shared Mobility",
+        strategyTitleHighlight: "Platform Strategy",
+
+        strategyList: [
+            "Develop real-time ride-hailing platforms",
+            "Enable GPS tracking and monitoring",
+            "Build reliable user and driver apps",
+            "Leverage analytics for smarter operations",
+        ],
+
         items: [
             {
                 title: "Ride-hailing Platforms",
@@ -103,10 +170,29 @@ export const industries: Industry[] = [
             },
         ],
     },
+
     {
         title: "Logistics",
+        category: "Supply Chain & Logistics",
         description:
             "End-to-end logistics and supply chain software that enhances tracking, coordination, and delivery efficiency.",
+
+        heroHeadlineStart: "Optimizing",
+        heroHeadlineGradient: "Logistics Operations",
+
+        content:
+            "We build logistics platforms that provide real-time shipment visibility, dispatch coordination, and route optimization. Our solutions help logistics companies reduce costs and improve delivery efficiency.",
+
+        strategyTitleStart: "Our Logistics",
+        strategyTitleHighlight: "Optimization Strategy",
+
+        strategyList: [
+            "Enable real-time shipment tracking",
+            "Improve dispatch and delivery coordination",
+            "Optimize routes and delivery time",
+            "Enhance supply chain visibility",
+        ],
+
         items: [
             {
                 title: "Shipment Tracking",
@@ -134,10 +220,29 @@ export const industries: Industry[] = [
             },
         ],
     },
+
     {
         title: "Electric Mobility",
+        category: "Sustainable Technology",
         description:
             "Innovative solutions for electric vehicle ecosystems, from charging management to mobility analytics.",
+
+        heroHeadlineStart: "Accelerating",
+        heroHeadlineGradient: "Electric Mobility",
+
+        content:
+            "We support electric mobility ecosystems with smart charging platforms, energy monitoring tools, and analytics dashboards designed for efficiency and sustainability.",
+
+        strategyTitleStart: "Our Electric Mobility",
+        strategyTitleHighlight: "Innovation Framework",
+
+        strategyList: [
+            "Develop EV charging management systems",
+            "Monitor and optimize energy usage",
+            "Provide mobility analytics dashboards",
+            "Integrate IoT-powered EV solutions",
+        ],
+
         items: [
             {
                 title: "EV Charging Platforms",
@@ -165,10 +270,29 @@ export const industries: Industry[] = [
             },
         ],
     },
+
     {
         title: "E-commerce",
+        category: "Digital Commerce",
         description:
             "Robust e-commerce solutions that enable online sales, inventory management, and seamless customer journeys.",
+
+        heroHeadlineStart: "Scaling",
+        heroHeadlineGradient: "E-commerce Experiences",
+
+        content:
+            "We build high-performance e-commerce platforms optimized for conversions, scalability, and operational efficiency across the entire online shopping journey.",
+
+        strategyTitleStart: "Our E-commerce",
+        strategyTitleHighlight: "Growth Strategy",
+
+        strategyList: [
+            "Build scalable online stores",
+            "Integrate secure payment gateways",
+            "Streamline order and inventory management",
+            "Optimize customer shopping experiences",
+        ],
+
         items: [
             {
                 title: "Online Stores",
@@ -196,10 +320,29 @@ export const industries: Industry[] = [
             },
         ],
     },
+
     {
         title: "SaaS",
+        category: "Cloud Software",
         description:
             "Cloud-based software platforms built for scalability, performance, and recurring revenue.",
+
+        heroHeadlineStart: "Building Scalable",
+        heroHeadlineGradient: "SaaS Platforms",
+
+        content:
+            "We design and develop SaaS platforms with multi-tenant architectures, subscription billing, and cloud infrastructure built for long-term growth.",
+
+        strategyTitleStart: "Our SaaS",
+        strategyTitleHighlight: "Product Strategy",
+
+        strategyList: [
+            "Design multi-tenant SaaS architectures",
+            "Implement subscription billing systems",
+            "Build intuitive admin dashboards",
+            "Ensure performance and reliability",
+        ],
+
         items: [
             {
                 title: "Multi-tenant Systems",
@@ -228,71 +371,27 @@ export const industries: Industry[] = [
         ],
     },
     {
-        title: "On-Demand",
-        description:
-            "On-demand platforms that connect users with services in real time, enabling instant booking and fulfillment.",
-        items: [
-            {
-                title: "Service Booking Apps",
-                description:
-                    "Applications that allow users to book services instantly.",
-                image: "",
-            },
-            {
-                title: "Real-time Matching",
-                description:
-                    "Systems that match users with service providers in real time.",
-                image: "",
-            },
-            {
-                title: "Payment Integration",
-                description:
-                    "Integrated payment systems for seamless transactions.",
-                image: "",
-            },
-            {
-                title: "Notifications & Alerts",
-                description:
-                    "Automated alerts and notifications for users and providers.",
-                image: "",
-            },
-        ],
-    },
-    {
-        title: "Healthcare",
-        description:
-            "Digital healthcare systems focused on patient care, data security, and operational efficiency.",
-        items: [
-            {
-                title: "Patient Management Systems",
-                description:
-                    "Systems for managing patient records and clinical workflows.",
-                image: "",
-            },
-            {
-                title: "Appointment Booking",
-                description:
-                    "Online booking solutions for clinics and healthcare providers.",
-                image: "",
-            },
-            {
-                title: "Health Records",
-                description:
-                    "Secure electronic health record (EHR) systems.",
-                image: "",
-            },
-            {
-                title: "Secure Data Handling",
-                description:
-                    "Solutions ensuring privacy and protection of sensitive medical data.",
-                image: "",
-            },
-        ],
-    },
-    {
         title: "FinTech",
+        category: "Financial Technology",
         description:
             "Innovative financial technology solutions that power digital payments, wallets, and financial automation.",
+
+        heroHeadlineStart: "Innovating the Future of",
+        heroHeadlineGradient: "Financial Technology",
+
+        content:
+            "We help FinTech companies launch secure, scalable, and user-friendly digital financial products. From payment platforms to APIs and fraud prevention systems, we build solutions that move money faster and safer.",
+
+        strategyTitleStart: "Our FinTech",
+        strategyTitleHighlight: "Innovation Strategy",
+
+        strategyList: [
+            "Build secure and scalable payment platforms",
+            "Develop digital wallets and financial APIs",
+            "Automate financial operations and workflows",
+            "Implement fraud detection and risk controls",
+        ],
+
         items: [
             {
                 title: "Payment Platforms",
@@ -321,9 +420,125 @@ export const industries: Industry[] = [
         ],
     },
     {
+        title: "Healthcare",
+        category: "Health Technology",
+        description:
+            "Digital healthcare systems focused on patient care, data security, and operational efficiency.",
+
+        heroHeadlineStart: "Transforming",
+        heroHeadlineGradient: "Digital Healthcare",
+
+        content:
+            "We develop healthcare software that improves patient experiences, streamlines clinical workflows, and ensures secure handling of sensitive medical data. Our solutions support providers, clinics, and health platforms.",
+
+        strategyTitleStart: "Our Healthcare",
+        strategyTitleHighlight: "Technology Approach",
+
+        strategyList: [
+            "Digitize patient records and workflows",
+            "Enable online appointment booking",
+            "Ensure secure health data management",
+            "Improve operational efficiency for providers",
+        ],
+
+        items: [
+            {
+                title: "Patient Management Systems",
+                description:
+                    "Systems for managing patient records and clinical workflows.",
+                image: "",
+            },
+            {
+                title: "Appointment Booking",
+                description:
+                    "Online booking solutions for clinics and healthcare providers.",
+                image: "",
+            },
+            {
+                title: "Health Records",
+                description:
+                    "Secure electronic health record (EHR) systems.",
+                image: "",
+            },
+            {
+                title: "Secure Data Handling",
+                description:
+                    "Solutions ensuring privacy and protection of sensitive medical data.",
+                image: "",
+            },
+        ],
+    },
+    {
+        title: "On-Demand",
+        category: "Real-Time Services",
+        description:
+            "On-demand platforms that connect users with services in real time, enabling instant booking and fulfillment.",
+
+        heroHeadlineStart: "Powering",
+        heroHeadlineGradient: "On-Demand Experiences",
+
+        content:
+            "We build real-time on-demand platforms that match users with services instantly. Our solutions focus on speed, reliability, and seamless user journeys across web and mobile.",
+
+        strategyTitleStart: "Our On-Demand",
+        strategyTitleHighlight: "Platform Strategy",
+
+        strategyList: [
+            "Develop real-time service booking platforms",
+            "Implement instant user-to-provider matching",
+            "Integrate seamless payment systems",
+            "Enable notifications and real-time updates",
+        ],
+
+        items: [
+            {
+                title: "Service Booking Apps",
+                description:
+                    "Applications that allow users to book services instantly.",
+                image: "",
+            },
+            {
+                title: "Real-time Matching",
+                description:
+                    "Systems that match users with service providers in real time.",
+                image: "",
+            },
+            {
+                title: "Payment Integration",
+                description:
+                    "Integrated payment systems for seamless transactions.",
+                image: "",
+            },
+            {
+                title: "Notifications & Alerts",
+                description:
+                    "Automated alerts and notifications for users and providers.",
+                image: "",
+            },
+        ],
+    },
+    {
         title: "Real Estate",
+        category: "Property Technology",
         description:
             "Property technology solutions that simplify listings, bookings, and property management processes.",
+
+        heroHeadlineStart: "Modernizing",
+        heroHeadlineGradient: "Real Estate Platforms",
+
+        content:
+            "We build digital property platforms that simplify listings, bookings, and customer management. Our solutions help real estate businesses operate efficiently and close deals faster.",
+
+        strategyTitleStart: "Our Real Estate",
+        strategyTitleHighlight: "Digital Strategy",
+
+        strategyList: [
+            "Build scalable property listing platforms",
+            "Enable booking and scheduling systems",
+            "Implement CRM solutions for agents",
+            "Integrate secure payment systems",
+        ],
+
         items: [
             {
                 title: "Property Listing Platforms",
@@ -351,6 +566,16 @@ export const industries: Industry[] = [
             },
         ],
     },
+
+
+
+
+
+
+
+
+
+
 
 
 

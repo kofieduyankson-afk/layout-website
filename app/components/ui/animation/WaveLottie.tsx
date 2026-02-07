@@ -4,14 +4,16 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 export default function WaveLottie() {
     return (
-        <div className="absolute inset-0 w-full h-full">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <DotLottieReact
 
 
                 src="/bg/Background Grey Wave.lottie"
                 autoplay
                 loop
-                className="w-full h-full pointer-events-none opacity-30 rotate-180"
+                className=" w-[120%] h-full
+                  -translate-x-[10%]
+                  opacity-20"
             />
         </div>
 
