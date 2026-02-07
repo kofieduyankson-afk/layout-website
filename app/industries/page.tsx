@@ -4,6 +4,8 @@
 
 import IndustriesCard from "../components/Card/ExpandIndustryCard";
 import IndustriesGrid from "../components/Industry/IndustryGrid";
+import IntroBackground from "../components/ui/animation/IntroBackground";
+import ContactCTA from "../components/ui/ContactCTA";
 import { industries } from "../data/detailedIndustries";
 
 export default function Industries() {
@@ -11,6 +13,7 @@ export default function Industries() {
         <main className="min-h-screen bg-white">
             {/*Title and Description */}
             <section className="px-6 pt-24 pb-16 text-center">
+                <IntroBackground />
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-#d5d6d7">
                     Industries We Serve
                 </h1>
@@ -25,6 +28,13 @@ export default function Industries() {
 
                 <IndustriesGrid />
             </section>
+            {/*
+                            CTA
+                         */}
+            <section >
+                <ContactCTA />
+            </section>
+
         </main>
     );
 }

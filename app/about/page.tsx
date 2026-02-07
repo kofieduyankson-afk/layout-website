@@ -1,9 +1,11 @@
 "use client";
 
-import AnimatedBackground from "../components/ui/animation/AnimatedBackground";
+
+import { Business } from "../components/ui/animation/ContentAnimation";
 import ContentBackground from "../components/ui/animation/ContentBackground";
-import IntroBackground from "../components/ui/animation/IntroBackground";
-import OnlineBusinessLottie from "../components/ui/animation/OnlineBusinessLottie";
+import IntroBackground, { CTABackground } from "../components/ui/animation/IntroBackground";
+import ThreeBackground from "../components/ui/animation/ThreeBackground";
+
 import PartnersSlider from "../components/ui/partnersSlide";
 import TeamCard from "../components/ui/TeamCard";
 import { team } from "../data/teamData";
@@ -42,7 +44,7 @@ export default function About() {
                     <div className="w-full lg:w-2/5 relative">
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-[#17a28f]/20 to-transparent rounded-full blur-3xl -z-10" />
                         <div className="h-[350px] sm:h-[450px]">
-                            <OnlineBusinessLottie />
+                            <Business />
                         </div>
                     </div>
                 </div>
@@ -123,10 +125,11 @@ export default function About() {
 
             {/* Footer CTA */}
             <section
-                className="relative w-full px-6 py-24 text-white text-center bg-cover bg-center overflow-hidden"
-                style={{ backgroundImage: "url('/team.jpg')" }}
+                className="relative w-full px-6 py-24 text-white text-center rounded-t-3xl bg-cover bg-center overflow-hidden"
+
             >
-                <div className="absolute inset-0 bg-[#262e31]/80 backdrop-blur-sm"></div>
+                {/* <ThreeBackground /> */}
+                <div className="absolute inset-0 bg-[#17a28f]/80  rounded-t-3xlbackdrop-blur-sm"></div>
 
                 <div className="relative z-10 max-w-3xl mx-auto">
                     <h2 className="text-4xl font-bold mb-6">

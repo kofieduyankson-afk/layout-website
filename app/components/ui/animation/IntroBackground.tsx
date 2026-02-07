@@ -18,3 +18,20 @@ export default function IntroBackground() {
         </div>
     );
 }
+
+export function CTABackground() {
+    return (
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <DotLottieReact
+                src="/bg/Water waves.lottie"
+                autoplay
+                loop
+                className="
+                  w-[120%] h-full
+                  -translate-x-[10%]
+                  opacity-20
+                "
+            />
+        </div>
+    );
+}

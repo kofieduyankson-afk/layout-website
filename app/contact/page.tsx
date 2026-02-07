@@ -128,7 +128,7 @@ export default function Contact() {
             {/* Bottom Section */}
             <section
                 className="relative px-6 py-24 text-white text-center rounded-t-[3.5rem] overflow-hidden"
-                style={{ backgroundImage: "url('/blacker.jpg')", backgroundSize: 'cover' }}
+                style={{ backgroundSize: 'cover' }}
             >
                 <div className="absolute inset-0 bg-gradient-to-br from-[#17a28f] to-[#262e31]/95 opacity-90"></div>
                 <div className="relative z-10 max-w-4xl mx-auto">
@@ -155,9 +155,9 @@ export default function Contact() {
                                 />
                             ))}
                         </div>
-                        <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#17a28f] bg-white px-4 py-1 rounded-full shadow-md">
+                        {/* <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#17a28f] bg-white px-4 py-1 rounded-full shadow-md">
                             Trusted Globally
-                        </p>
+                        </p> */}
                     </div>
                 </div>
             </section>
