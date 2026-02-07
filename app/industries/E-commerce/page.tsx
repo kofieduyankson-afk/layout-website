@@ -8,6 +8,7 @@ import OnlineBusinessLottie from "@/app/components/ui/animation/OnlineBusinessLo
 
 import { industries } from "@/app/data/detailedIndustries";
 import ContactCTA from "@/app/components/ui/ContactCTA";
+import { E_Commerce } from "@/app/components/ui/animation/ContentAnimation";
 
 interface Props {
     params: {
@@ -55,7 +56,7 @@ export default function IndustryPage({ params }: Props) {
                     <div className="w-full lg:w-2/5 relative">
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-[#17a28f]/20 to-transparent rounded-full blur-3xl -z-10" />
                         <div className="h-[350px] sm:h-[450px]">
-                            <OnlineBusinessLottie />
+                            <E_Commerce />
                         </div>
                     </div>
                 </div>
@@ -71,7 +72,7 @@ export default function IndustryPage({ params }: Props) {
                     <div className="w-full lg:w-1/2 order-2 lg:order-1">
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl border-[6px] border-white">
                             <img
-                                src="/gifs/ladder-computer.gif"
+                                src="/gifs/ecommerce.gif"
                                 alt={data.title}
                                 className="w-full object-cover"
                             />

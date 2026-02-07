@@ -1,4 +1,5 @@
 import DetailedItemCard from "@/app/components/Card/DetailedItemCard";
+import { Healthcare } from "@/app/components/ui/animation/ContentAnimation";
 import ContentBackground from "@/app/components/ui/animation/ContentBackground";
 import IntroBackground from "@/app/components/ui/animation/IntroBackground";
 import OnlineBusinessLottie from "@/app/components/ui/animation/OnlineBusinessLottie";
@@ -28,7 +29,7 @@ export default function HealthcareIndustryPage() {
                     {/* Left Column */}
                     <div className="w-full lg:w-3/5 text-center lg:text-left space-y-6">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#17a28f]/10 text-[#17a28f] font-bold text-lg uppercase tracking-widest">
-                            <span className="w-2 h-2 rounded-full bg-[#17a28f]" />
+                             <span className="w-2 h-2 rounded-full bg-[#17a28f]" />
                             {data.title}
                         </div>
 
@@ -48,7 +49,7 @@ export default function HealthcareIndustryPage() {
                     <div className="w-full lg:w-2/5 relative">
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-[#17a28f]/20 to-transparent rounded-full blur-3xl -z-10" />
                         <div className="h-[350px] sm:h-[450px]">
-                            <OnlineBusinessLottie />
+                            <Healthcare />
                         </div>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ export const partnersData: Partner[] = [
     { title: "Alisa Hotel", image: "/alisa.png" },
     { title: "Swift", image: "/swift.png" },
     { title: "Krontiva", image: "/krontivia.png" },
-    { title: "Centrral Security", image: "/csd.png" },
+    { title: "Central Security", image: "/csd.png" },
     { title: "TicTok", image: "/tictok.png" },
     { title: "Brosa", image: "/brosa.png" },
 

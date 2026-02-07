@@ -27,7 +27,7 @@ export default function SaaSPage() {
 
                     {/* Left Column: Headline & Intro */}
                     <div className="w-full lg:w-3/5 text-center lg:text-left space-y-6">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#17a28f]/10 text-[#17a28f] font-bold text-xs uppercase tracking-widest">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#17a28f]/10 text-[#17a28f] font-bold text-lg uppercase tracking-widest">
                             <span className="w-2 h-2 rounded-full bg-[#17a28f]"></span>
                             {/* DYNAMIC: Category Badge */}
                             {data.title}
@@ -72,7 +72,7 @@ export default function SaaSPage() {
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl border-[6px] border-white">
                             <div className="absolute inset-0 bg-[#262e31]/10 z-10 pointer-events-none mix-blend-multiply"></div>
                             <img
-                                src="/gifs/CloudGIF.gif"
+                                src="/gifs/cloud.gif"
                                 alt="Service workflow"
                                 className="w-full object-cover transform hover:scale-105 transition-transform duration-700"
                             />

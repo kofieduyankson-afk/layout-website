@@ -1,4 +1,5 @@
 import DetailedItemCard from "@/app/components/Card/DetailedItemCard";
+import { RealEstate } from "@/app/components/ui/animation/ContentAnimation";
 import ContentBackground from "@/app/components/ui/animation/ContentBackground";
 import IntroBackground from "@/app/components/ui/animation/IntroBackground";
 import OnlineBusinessLottie from "@/app/components/ui/animation/OnlineBusinessLottie";
@@ -47,7 +48,7 @@ export default function RealEstateIndustryPage() {
                     <div className="w-full lg:w-2/5 relative">
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-[#17a28f]/20 to-transparent rounded-full blur-3xl -z-10" />
                         <div className="h-[350px] sm:h-[450px]">
-                            <OnlineBusinessLottie />
+                            <RealEstate />
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 import DetailedItemCard from "@/app/components/Card/DetailedItemCard";
+import { Banking } from "@/app/components/ui/animation/ContentAnimation";
 import ContentBackground from "@/app/components/ui/animation/ContentBackground";
 import IntroBackground from "@/app/components/ui/animation/IntroBackground";
 import OnlineBusinessLottie from "@/app/components/ui/animation/OnlineBusinessLottie";
@@ -48,7 +49,7 @@ export default function BankingAndFinanceIndustryPage() {
                     <div className="w-full lg:w-2/5 relative">
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-[#17a28f]/20 to-transparent rounded-full blur-3xl -z-10" />
                         <div className="h-[350px] sm:h-[450px]">
-                            <OnlineBusinessLottie />
+                            <Banking />
                         </div>
                     </div>
                 </div>
@@ -64,7 +65,7 @@ export default function BankingAndFinanceIndustryPage() {
                     <div className="w-full lg:w-1/2 order-2 lg:order-1">
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl border-[6px] border-white">
                             <img
-                                src="/gifs/ladder-computer.gif"
+                                src="/gifs/banking.gif"
                                 alt={data.title}
                                 className="w-full object-cover"
                             />

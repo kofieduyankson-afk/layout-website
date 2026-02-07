@@ -6,6 +6,7 @@ import ContentBackground from "@/app/components/ui/animation/ContentBackground";
 import OnlineBusinessLottie from "@/app/components/ui/animation/OnlineBusinessLottie";
 import { services } from "@/app/data/detailedService";
 import ContactCTA from '@/app/components/ui/ContactCTA';
+import { Booking } from '@/app/components/ui/animation/ContentAnimation';
 
 export default function OperationsBookingPlatformPage() {
     const data = services.find(
@@ -27,8 +28,8 @@ export default function OperationsBookingPlatformPage() {
 
                     {/* Left Column: Headline & Intro */}
                     <div className="w-full lg:w-3/5 text-center lg:text-left space-y-6">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#17a28f]/10 text-[#17a28f] font-bold text-xs uppercase tracking-widest">
-                            <span className="w-2 h-2 rounded-full bg-[#17a28f]"></span>
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#17a28f]/10 text-[#17a28f] font-bold text-lg uppercase tracking-widest">
+                             <span className="w-2 h-2 rounded-full bg-[#17a28f]"></span>
                             {/* DYNAMIC: Category Badge */}
                             {data.title}
                         </div>
@@ -54,7 +55,7 @@ export default function OperationsBookingPlatformPage() {
                     <div className="w-full lg:w-2/5 relative">
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-[#17a28f]/20 to-transparent rounded-full blur-3xl -z-10" />
                         <div className="h-[350px] sm:h-[450px]">
-                            <OnlineBusinessLottie />
+                            <Booking />
                         </div>
                     </div>
                 </div>

@@ -1,29 +1,37 @@
 "use client";
 
 import { partnersData } from "@/app/data/partnersData";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
+
+const ITEMS_PER_SLIDE = 3;
 
 export default function PartnersSlider() {
     const [currentSlide, setCurrentSlide] = useState(0);
 
-    // Auto-slide every 2 seconds
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentSlide((prev) => (prev === 0 ? 1 : 0));
-        }, 2000);
-        return () => clearInterval(interval);
+    // 🔹 Create slides dynamically
+    const slides = useMemo(() => {
+        const result = [];
+        for (let i = 0; i < partnersData.length; i += ITEMS_PER_SLIDE) {
+            result.push(partnersData.slice(i, i + ITEMS_PER_SLIDE));
+        }
+        return result;
     }, []);
 
-    // Split partners into 2 slides of 3 each
-    const slides = [
-        partnersData.slice(0, 3),
-        partnersData.slice(3, 6),
-    ];
+    // 🔹 Auto-slide through ALL slides
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentSlide((prev) =>
+                prev === slides.length - 1 ? 0 : prev + 1
+            );
+        }, 2000);
+
+        return () => clearInterval(interval);
+    }, [slides.length]);
 
     return (
         <div className="relative w-full overflow-hidden">
             <div
-                className="flex transition-transform duration-700"
+                className="flex transition-transform duration-700 ease-in-out"
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
                 {slides.map((slide, idx) => (

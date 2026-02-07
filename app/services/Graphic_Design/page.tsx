@@ -10,6 +10,7 @@ import ContactCTA from '@/app/components/ui/ContactCTA';
 
 
 import { services } from "@/app/data/detailedService";
+import { Design } from '@/app/components/ui/animation/ContentAnimation';
 
 
 export default function GraphicDesignPage() {
@@ -32,7 +33,7 @@ export default function GraphicDesignPage() {
 
                     {/* Left Column: Headline & Intro */}
                     <div className="w-full lg:w-3/5 text-center lg:text-left space-y-6">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#17a28f]/10 text-[#17a28f] font-bold text-xs uppercase tracking-widest">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#17a28f]/10 text-[#17a28f] font-bold text-lg uppercase tracking-widest">
                             <span className="w-2 h-2 rounded-full bg-[#17a28f]"></span>
                             {/* DYNAMIC: Category Badge */}
                             {data.title}
@@ -59,7 +60,7 @@ export default function GraphicDesignPage() {
                     <div className="w-full lg:w-2/5 relative">
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-[#17a28f]/20 to-transparent rounded-full blur-3xl -z-10" />
                         <div className="h-[350px] sm:h-[450px]">
-                            <OnlineBusinessLottie />
+                            <Design />
                         </div>
                     </div>
                 </div>
@@ -77,7 +78,7 @@ export default function GraphicDesignPage() {
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl border-[6px] border-white">
                             <div className="absolute inset-0 bg-[#262e31]/10 z-10 pointer-events-none mix-blend-multiply"></div>
                             <img
-                                src="/gifs/ladder-computer.gif"
+                                src="/gifs/webDesign.gif"
                                 alt="Service workflow"
                                 className="w-full object-cover transform hover:scale-105 transition-transform duration-700"
                             />

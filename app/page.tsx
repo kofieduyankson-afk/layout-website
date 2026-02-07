@@ -40,7 +40,8 @@ export default function Home() {
       </section>
 
 
-      <section className="relative py-16 px-4 sm:px-6 overflow-hidden bg-white shadow-md">
+      <section className="relative py-24 px-4 sm:px-6 overflow-hidden bg-[#f8fafc] border-y border-gray-100">
+
         {/* Optional: Background animation */}
         <IntroBackground />
 
@@ -69,7 +70,7 @@ export default function Home() {
 
 
       {/* Services Grid */}
-      <section className="relative py-12 sm:py-16 px-4 sm:px-6 shadow-md overflow-hidden">
+      <section className="relative py-24 px-4 sm:px-6 overflow-hidden bg-white border-y border-gray-100">
         {/* Background animation */}
         <ContentBackground />
 
@@ -77,7 +78,7 @@ export default function Home() {
       </section>
 
       {/* Industries Intro Section */}
-      <section className="relative py-16 px-4 sm:px-6 overflow-hidden bg-white shadow-md">
+      <section className="relative py-16 px-4 sm:px-6 overflow-hidden bg-[#f8fafc] shadow-md">
         {/* Optional: Background animation */}
         <IntroBackground />
 
@@ -103,7 +104,7 @@ export default function Home() {
 
 
       {/* Industries Grid */}
-      <section className="relative py-12 sm:py-16 px-4 sm:px-6 shadow-md overflow-hidden">
+      <section className="relative py-24 px-4 sm:px-6 overflow-hidden bg-[#f8fafc] border-y border-gray-100">
         {/* Background animation */}
         <ContentBackground />
 
