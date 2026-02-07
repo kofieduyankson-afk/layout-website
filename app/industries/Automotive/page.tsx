@@ -27,7 +27,7 @@ export default function AutomotiveIndustryPage() {
 
                     {/* Left Column */}
                     <div className="w-full lg:w-3/5 text-center lg:text-left space-y-6">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#17a28f]/10 text-[#17a28f] font-bold text-xs uppercase tracking-widest">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#17a28f]/10 text-[#17a28f] font-bold text-lg uppercase tracking-widest">
                             <span className="w-2 h-2 rounded-full bg-[#17a28f]" />
                             {data.title}
                         </div>
