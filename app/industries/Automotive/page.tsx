@@ -29,7 +29,7 @@ export default function AutomotiveIndustryPage() {
                     <div className="w-full lg:w-3/5 text-center lg:text-left space-y-6">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#17a28f]/10 text-[#17a28f] font-bold text-xs uppercase tracking-widest">
                             <span className="w-2 h-2 rounded-full bg-[#17a28f]" />
-                            {data.category}
+                            {data.title}
                         </div>
 
                         <h1 className="text-5xl sm:text-6xl font-extrabold text-[#262e31] leading-tight">

@@ -18,8 +18,8 @@ export default function HealthcareIndustryPage() {
         <main className="min-h-screen bg-white font-sans">
 
             {/* =========================================
-             SECTION 1: HERO
-         ========================================= */}
+               SECTION 1: HERO
+           ========================================= */}
             <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-24 px-6 overflow-hidden">
                 <IntroBackground />
 
@@ -29,7 +29,7 @@ export default function HealthcareIndustryPage() {
                     <div className="w-full lg:w-3/5 text-center lg:text-left space-y-6">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#17a28f]/10 text-[#17a28f] font-bold text-xs uppercase tracking-widest">
                             <span className="w-2 h-2 rounded-full bg-[#17a28f]" />
-                            {data.category}
+                            {data.title}
                         </div>
 
                         <h1 className="text-5xl sm:text-6xl font-extrabold text-[#262e31] leading-tight">
@@ -55,8 +55,8 @@ export default function HealthcareIndustryPage() {
             </section>
 
             {/* =========================================
-             SECTION 2: STRATEGY
-         ========================================= */}
+               SECTION 2: STRATEGY
+           ========================================= */}
             <section className="py-20 px-6 bg-[#f8fafc] border-y border-gray-100">
                 <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
 
@@ -106,8 +106,8 @@ export default function HealthcareIndustryPage() {
             </section>
 
             {/* =========================================
-             SECTION 3: CAPABILITIES GRID
-         ========================================= */}
+               SECTION 3: CAPABILITIES GRID
+           ========================================= */}
             <section className="relative py-24 px-6 bg-white overflow-hidden">
                 <ContentBackground />
 
@@ -136,8 +136,8 @@ export default function HealthcareIndustryPage() {
             </section>
 
             {/*
-             CTA
-          */}
+               CTA
+            */}
             <section >
                 <ContactCTA />
             </section>
