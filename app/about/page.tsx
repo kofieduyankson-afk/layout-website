@@ -107,7 +107,7 @@ export default function About() {
 
             {/* Team Section */}
             <section className="px-6 py-24 bg-white">
-                <ContentBackground />
+                {/* <ContentBackground /> */}
                 <div className="mx-auto max-w-7xl">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-extrabold text-[#262e31] mb-4">
