@@ -72,7 +72,7 @@ export default function IndustryPage({ params }: Props) {
                     <div className="w-full lg:w-1/2 order-2 lg:order-1">
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl border-[6px] border-white">
                             <img
-                                src="/gifs/ecommerce.gif"
+                                src="/gifs/Shopping Phone GIF by Express One.gif"
                                 alt={data.title}
                                 className="w-full object-cover"
                             />

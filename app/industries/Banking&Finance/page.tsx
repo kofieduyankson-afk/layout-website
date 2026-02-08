@@ -65,7 +65,7 @@ export default function BankingAndFinanceIndustryPage() {
                     <div className="w-full lg:w-1/2 order-2 lg:order-1">
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl border-[6px] border-white">
                             <img
-                                src="/gifs/banking.gif"
+                                src="/gifs/Money Business GIF by JustStartInvesting.gif"
                                 alt={data.title}
                                 className="w-full object-cover"
                             />

@@ -28,7 +28,7 @@ export default function SaaSIndustryPage() {
                     {/* Left Column */}
                     <div className="w-full lg:w-3/5 text-center lg:text-left space-y-6">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#17a28f]/10 text-[#17a28f] font-bold text-lg uppercase tracking-widest">
-                             <span className="w-2 h-2 rounded-full bg-[#17a28f]" />
+                            <span className="w-2 h-2 rounded-full bg-[#17a28f]" />
                             {data.title}
                         </div>
 
@@ -64,7 +64,7 @@ export default function SaaSIndustryPage() {
                     <div className="w-full lg:w-1/2 order-2 lg:order-1">
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl border-[6px] border-white">
                             <img
-                                src="/gifs/ladder-computer.gif"
+                                src="/gifs/animation motion design GIF by madebydot.gif"
                                 alt={data.title}
                                 className="w-full object-cover"
                             />

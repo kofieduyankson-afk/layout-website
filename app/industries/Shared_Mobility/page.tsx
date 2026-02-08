@@ -65,7 +65,7 @@ export default function SharedMobilityIndustryPage() {
                     <div className="w-full lg:w-1/2 order-2 lg:order-1">
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl border-[6px] border-white">
                             <img
-                                src="/gifs/ladder-computer.gif"
+                                src="/gifs/shared.gif"
                                 alt={data.title}
                                 className="w-full object-cover"
                             />
