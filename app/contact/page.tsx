@@ -127,17 +127,31 @@ export default function Contact() {
             {/* Bottom Section */}
             {/* Bottom Section */}
             <section
-                className="relative px-6 py-24 text-white text-center rounded-t-[3.5rem] overflow-hidden"
-                style={{ backgroundSize: 'cover' }}
+                className="relative px-6 py-28 text-white text-center rounded-t-[3.5rem] overflow-hidden"
             >
-                <div className="absolute inset-0 bg-gradient-to-br from-[#17a28f] to-[#262e31]/95 opacity-90"></div>
+                {/* Gradient background */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#17a28f] via-[#14907d] to-[#0f6f62]" />
+
+                {/* Glass overlay */}
+                <div className="absolute inset-0 bg-white/5 backdrop-blur-sm rounded-t-[3.5rem]" />
+
+                {/* Ambient glow accents */}
+                <div className="absolute -top-32 -left-32 w-[28rem] h-[28rem] bg-white/10 rounded-full blur-3xl" />
+                <div className="absolute -bottom-32 -right-32 w-[28rem] h-[28rem] bg-black/20 rounded-full blur-3xl" />
+
+                {/* Content */}
                 <div className="relative z-10 max-w-4xl mx-auto">
-                    <h2 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">Ready to Build Your Future?</h2>
-                    <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
-                        Join the growing list of businesses that have redefined their digital presence with us.
+                    <h2 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight leading-tight">
+                        Ready to Build Your Future?
+                    </h2>
+
+                    <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed">
+                        Join the growing list of businesses that have redefined their digital
+                        presence with us.
                     </p>
+
                     <div className="flex flex-col items-center gap-4">
-                        <div className="flex -space-x-3 mb-2">
+                        <div className="flex -space-x-4 mb-2">
                             {[
                                 "/pib.png",
                                 "/alisa.png",
@@ -145,22 +159,28 @@ export default function Contact() {
                                 "/krontivia.png",
                                 "/csd.png",
                                 "/tictok.png",
-                                "/brosa.png"
+                                "/brosa.png",
                             ].map((src, i) => (
                                 <img
                                     key={i}
                                     src={src}
                                     alt="Partner Logo"
-                                    className="w-12 h-12 rounded-full border-4 border-[#262e31]/20 bg-white object-contain p-1 shadow-xl"
+                                    className="w-12 h-12 rounded-full
+                       border-4 border-white/30
+                       bg-white object-contain p-1
+                       shadow-xl
+                       backdrop-blur-sm"
                                 />
                             ))}
                         </div>
-                        {/* <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#17a28f] bg-white px-4 py-1 rounded-full shadow-md">
-                            Trusted Globally
-                        </p> */}
+
+                        <p className="text-sm font-bold uppercase tracking-[0.2em] text-white/80">
+                            Trusted by Industry Leaders
+                        </p>
                     </div>
                 </div>
             </section>
+
 
         </main>
     );

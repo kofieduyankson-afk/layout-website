@@ -123,26 +123,40 @@ export default function About() {
                 </div>
             </section>
 
-            {/* Footer CTA */}
-            <section
-                className="relative w-full px-6 py-24 text-white text-center rounded-t-3xl bg-cover bg-center overflow-hidden"
+            <section className="relative w-full px-6 py-28 text-white text-center overflow-hidden rounded-t-[3.5rem]">
 
-            >
-                {/* <ThreeBackground /> */}
-                <div className="absolute inset-0 bg-[#17a28f]/80  rounded-t-3xlbackdrop-blur-sm"></div>
+                {/* Gradient background */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#17a28f] via-[#14907d] to-[#0f6f62]" />
 
+                {/* Soft glass overlay */}
+                <div className="absolute inset-0 bg-white/5 backdrop-blur-sm rounded-t-[3.5rem]" />
+
+                {/* Ambient glow */}
+                <div className="absolute -top-24 -left-24 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
+                <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-black/20 rounded-full blur-3xl" />
+
+                {/* Content */}
                 <div className="relative z-10 max-w-3xl mx-auto">
-                    <h2 className="text-4xl font-bold mb-6">
-                        Ready to Transform Your Idea?
+                    <h2 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-6">
+                        Let’s Build Something <br className="hidden sm:block" />
+                        Meaningful Together
                     </h2>
-                    <p className="mb-10 text-xl text-gray-200">
-                        Let's collaborate to build a system that scales with your ambition.
+
+                    <p className="mb-12 text-xl text-white/90 leading-relaxed">
+                        Whether it’s a new idea or a growing business, we’re ready to help
+                        you turn vision into scalable, reliable digital systems.
                     </p>
+
                     <a
                         href="/contact"
-                        className="inline-block px-10 py-4 bg-[#17a28f] hover:bg-[#138a7a] text-white font-bold rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+                        className="inline-flex items-center gap-3 px-12 py-5
+                 bg-white text-[#262e31] font-bold text-lg
+                 rounded-full shadow-xl
+                 hover:shadow-2xl hover:-translate-y-1
+                 transition-all duration-300"
                     >
                         Start Your Project
+                        <span className="text-xl">→</span>
                     </a>
                 </div>
             </section>

@@ -3,6 +3,7 @@
 "use client";
 
 import ServicesGrid from "../components/Service/ServiceGrid";
+import AboutCTA from "../components/ui/AboutCTA";
 import IntroBackground from "../components/ui/animation/IntroBackground";
 import ContactCTA from "../components/ui/ContactCTA";
 import ServicesCard from "../components/ui/ExpandCard";
@@ -17,7 +18,7 @@ export default function Services() {
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-black">
                     Our Services
                 </h1>
-                <p className="mt-4 max-w-2xl mx-auto text-gray-600 dark:text-gray-300">
+                <p className="mt-4 max-w-2xl mx-auto text-xl sm:text-2xl text-[#262e31]">
                     We design, build, and maintain digital solutions that help businesses
                     scale efficiently and compete in a modern world.
                 </p>
@@ -31,9 +32,13 @@ export default function Services() {
             {/*
                             CTA
                          */}
-            <section >
-                <ContactCTA />
+            {/* About / CTA Section */}
+            <section
+            >
+                <AboutCTA />
             </section>
+
+
 
         </main>
     );

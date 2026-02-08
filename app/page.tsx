@@ -10,6 +10,7 @@ import TechLottie from "./components/ui/animation/TechLottie";
 import AnimatedText from "./components/ui/animation/AnimatedText";
 import AnimatedTypingText from "./components/ui/animation/AnimatedText";
 import OnlineBusinessLottie from "./components/ui/animation/OnlineBusinessLottie";
+import AboutCTA from "./components/ui/AboutCTA";
 // colors
 // teal [#17a28f] 17a28f
 // gray-white text  gray-200
@@ -113,27 +114,8 @@ export default function Home() {
 
       {/* About / CTA Section */}
       <section
-        className="relative w-full px-6 py-16 text-white text-center rounded-t-3xl overflow-hidden"
       >
-        {/* Hero Lottie as background, fits section and upside down */}
-        {/* <HeroLottie /> */}
-
-
-        {/* Optional overlay for better contrast */}
-        <div className="absolute inset-0 bg-[#17a28f]/50 rounded-t-3xl"></div>
-
-        {/* Content */}
-        <div className="relative z-10 max-w-3xl mx-auto">
-          <h2 className="text-3xl font-semibold mb-4">
-            We understand that every business is unique, which is why we offer a personalized approach to consulting.
-          </h2>
-          <a
-            href="/about"
-            className="inline-block px-6 py-3 bg-white text-[#262e31] font-medium rounded-lg shadow-md hover:shadow-lg transition"
-          >
-            Learn More
-          </a>
-        </div>
+        <AboutCTA />
       </section>
 
 
