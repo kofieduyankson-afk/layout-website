@@ -79,7 +79,7 @@ export default function Home() {
       </section>
 
       {/* Industries Intro Section */}
-      <section className="relative py-16 px-4 sm:px-6 overflow-hidden bg-[#f8fafc] shadow-md">
+      <section className="relative py-10 px-4 sm:px-6 overflow-hidden bg-[#f8fafc] shadow-md">
         {/* Optional: Background animation */}
         <IntroBackground />
 
@@ -105,7 +105,7 @@ export default function Home() {
 
 
       {/* Industries Grid */}
-      <section className="relative py-24 px-4 sm:px-6 overflow-hidden bg-[#f8fafc] border-y border-gray-100">
+      <section className="relative py-10 px-4 sm:px-6 overflow-hidden bg-[#f8fafc] border-y border-gray-100">
         {/* Background animation */}
         <ContentBackground />
 
