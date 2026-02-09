@@ -72,7 +72,7 @@ const AnimatedText: React.FC = () => {
             {/* Sub headline (animated line 2) */}
             <div className="relative h-14 overflow-hidden">
                 <p
-                    className={`text-xl sm:text-2xl text-[#262e31] leading-relaxed max-w-2xl transition-all duration-700 ease-out transform
+                    className={`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#17a28f]/10 text-[#17a28f] font-bold text-lg uppercase tracking-widest leading-relaxed max-w-2xl transition-all duration-700 ease-out transform
         ${line2 ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"}
       `}
                 >

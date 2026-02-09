@@ -32,7 +32,7 @@ export default function Home() {
               <AnimatedText />
 
               {/* Static supporting paragraph */}
-              <p className="text-xl sm:text-2xl text-[#262e31]/80 leading-relaxed max-w-3xl">
+              <p className="text-xl sm:text-2xl text-[#262e31]/80 leading-relaxed max-w-3xl z-11">
                 We are an IT consulting and digital solutions company helping businesses
                 design, build, and scale reliable technology.
               </p>
