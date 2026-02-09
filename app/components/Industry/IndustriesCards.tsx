@@ -46,7 +46,7 @@ export default function IndustriesCard({ industry }: Props) {
                                 alt={industry.title}
                                 width={64}
                                 height={64}
-                                className="object-contain "
+                                className="object-contain rounded-2xl"
                             />
                         </div>
                     ) : industry.emoji ? (
