@@ -57,7 +57,8 @@ export default function Footer() {
                         <ul className="mt-3 space-y-2 text-sm text-gray-400">
                             <li>Email: info@layoutllc.com</li>
                             <li>Phone: +233 24 136 6340</li>
-                            <li>Accra, Ghana</li>
+                            <li>Location : 14 Hayford Road Airport Commercial ,<br></br>  Accra Ghana</li>
+
                         </ul>
                     </div>
                 </div>

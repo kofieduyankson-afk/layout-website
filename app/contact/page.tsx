@@ -55,7 +55,7 @@ export default function Contact() {
                                     },
                                     {
                                         label: "Location",
-                                        value: "Accra, Ghana",
+                                        value: "14 Hayford Road Airport Commercial ,Accra Ghana",
                                         desc: "Operating globally with a local presence."
                                     }
                                 ].map((item, i) => (
