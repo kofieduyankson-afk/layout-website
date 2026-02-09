@@ -60,6 +60,17 @@ export const services: Service[] = [
                 description: "Reliable setup and maintenance of IT infrastructure and systems.",
                 image: "",
             },
+            {
+                title: "Cloud Solutions",
+                description: "Design and deployment of secure, scalable cloud infrastructure.",
+                image: "",
+            },
+            {
+                title: "Network Security",
+                description: "Protecting systems and data through firewalls, monitoring, and best practices.",
+                image: "",
+            },
+
         ],
     },
     //Web Development"
@@ -100,6 +111,17 @@ export const services: Service[] = [
                 description: "Speed and performance improvements for better user experience.",
                 image: "",
             },
+            {
+                title: "CMS Development",
+                description: "Content management systems that make updates simple and efficient.",
+                image: "",
+            },
+            {
+                title: "Web Application Maintenance",
+                description: "Ongoing updates, security patches, and feature improvements.",
+                image: "",
+            },
+
         ],
     },
     //App Development",
@@ -140,8 +162,20 @@ export const services: Service[] = [
                 description: "Ongoing updates, monitoring, and improvements after launch.",
                 image: "",
             },
+            {
+                title: "UI / UX for Mobile",
+                description: "Designing intuitive mobile interfaces that improve engagement.",
+                image: "",
+            },
+            {
+                title: "App Store Deployment",
+                description: "Publishing, testing, and optimizing apps for Google Play and App Store.",
+                image: "",
+            },
+
         ],
     },
+    //Software development
     {
         title: "Software Development",
         category: "Custom Engineering",
@@ -179,8 +213,20 @@ export const services: Service[] = [
                 description: "Automated processes to reduce manual effort and errors.",
                 image: "",
             },
+            {
+                title: "Legacy System Modernization",
+                description: "Upgrading outdated systems with modern, scalable technologies.",
+                image: "",
+            },
+            {
+                title: "Enterprise Software",
+                description: "Robust software solutions designed for large-scale operations.",
+                image: "",
+            },
+
         ],
     },
+    //Web Design
     {
         title: "Web Design",
         category: "Creative Studio",
@@ -218,8 +264,20 @@ export const services: Service[] = [
                 description: "Refreshing existing websites for a modern look and feel.",
                 image: "",
             },
+            {
+                title: "Design Systems",
+                description: "Reusable components and styles for consistent digital experiences.",
+                image: "",
+            },
+            {
+                title: "Landing Page Design",
+                description: "High-conversion landing pages tailored for marketing campaigns.",
+                image: "",
+            },
+
         ],
     },
+    //Whatsapp
     {
         title: "WhatsApp Business API",
         category: "Communication",
@@ -257,8 +315,20 @@ export const services: Service[] = [
                 description: "Secure integration of WhatsApp with existing systems.",
                 image: "",
             },
+            {
+                title: "Broadcast Campaigns",
+                description: "Targeted WhatsApp message campaigns with analytics and delivery tracking.",
+                image: "",
+            },
+            {
+                title: "CRM Integration",
+                description: "Sync WhatsApp conversations with customer relationship systems.",
+                image: "",
+            },
+
         ],
     },
+    //IT Support
     {
         title: "IT Support & Maintenance",
         category: "Reliability",
@@ -296,8 +366,20 @@ export const services: Service[] = [
                 description: "Ongoing assistance for technical challenges and questions.",
                 image: "",
             },
+            {
+                title: "Backup & Recovery",
+                description: "Automated backups and fast recovery plans for critical systems.",
+                image: "",
+            },
+            {
+                title: "Performance Optimization",
+                description: "Fine-tuning systems to ensure speed, stability, and reliability.",
+                image: "",
+            },
+
         ],
     },
+    //Graphic Design
     {
         title: "Graphic Design",
         category: "Visual Identity",
@@ -335,8 +417,20 @@ export const services: Service[] = [
                 description: "High-quality designs for brochures, flyers, and posters.",
                 image: "",
             },
+            {
+                title: "Presentation Design",
+                description: "Professional slide decks for pitches, reports, and meetings.",
+                image: "",
+            },
+            {
+                title: "Advertising Creatives",
+                description: "Visual assets for digital ads and promotional campaigns.",
+                image: "",
+            },
+
         ],
     },
+    //Saas
     {
         title: "SaaS",
         category: "Product Development",
@@ -374,8 +468,20 @@ export const services: Service[] = [
                 description: "Secure deployment and scaling on cloud infrastructure.",
                 image: "",
             },
+            {
+                title: "User Authentication",
+                description: "Secure login, roles, and permissions for SaaS platforms.",
+                image: "",
+            },
+            {
+                title: "Analytics & Reporting",
+                description: "Usage insights and performance metrics for SaaS products.",
+                image: "",
+            },
+
         ],
     },
+    //Operations And Booking
     {
         title: "Operations & Booking Platform",
         category: "Business Logic",
@@ -413,6 +519,17 @@ export const services: Service[] = [
                 description: "Dashboards and reports for operational insights.",
                 image: "",
             },
+            {
+                title: "Customer Management",
+                description: "Profiles, history, and communication tools for customers.",
+                image: "",
+            },
+            {
+                title: "Workflow Automation",
+                description: "Automated task flows to reduce manual operations.",
+                image: "",
+            },
+
         ],
     },
 ];

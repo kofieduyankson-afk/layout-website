@@ -40,7 +40,7 @@ export default function Home() {
 
 
             {/* RIGHT: Lottie Animation */}
-            <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[500px] flex justify-end">
+            <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[500px] flex ">
               <TechLottie />
             </div>
 

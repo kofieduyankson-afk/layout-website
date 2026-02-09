@@ -70,6 +70,17 @@ export const industries: Industry[] = [
                     "CRM solutions that help automotive businesses manage customer relationships.",
                 image: "",
             },
+            {
+                title: "Dealer Management Systems",
+                description: "Centralized platforms for managing sales, inventory, and after-sales services.",
+                image: "",
+            },
+            {
+                title: "Telematics Integration",
+                description: "Vehicle data integration for diagnostics, performance tracking, and insights.",
+                image: "",
+            },
+
         ],
     },
     //Banking & Finance",
@@ -120,6 +131,17 @@ export const industries: Industry[] = [
                     "Solutions ensuring data protection and regulatory compliance.",
                 image: "",
             },
+            {
+                title: "Mobile Banking Apps",
+                description: "Secure mobile applications for banking services and customer access.",
+                image: "",
+            },
+            {
+                title: "Transaction Monitoring",
+                description: "Real-time monitoring systems to detect suspicious financial activities.",
+                image: "",
+            },
+
         ],
     },
     //"Shared Mobility"
@@ -170,6 +192,17 @@ export const industries: Industry[] = [
                     "Dashboards providing insights into usage, performance, and demand.",
                 image: "",
             },
+            {
+                title: "Dynamic Pricing Engines",
+                description: "Pricing systems that adjust fares based on demand and availability.",
+                image: "",
+            },
+            {
+                title: "Fleet Optimization Tools",
+                description: "Software to improve vehicle utilization and reduce operational costs.",
+                image: "",
+            },
+
         ],
     },
     //Logistics
@@ -220,6 +253,17 @@ export const industries: Industry[] = [
                     "Smart routing solutions to reduce delivery time and operational costs.",
                 image: "",
             },
+            {
+                title: "Proof of Delivery Systems",
+                description: "Digital confirmation of deliveries with signatures and timestamps.",
+                image: "",
+            },
+            {
+                title: "Logistics Analytics",
+                description: "Data insights into delivery performance, delays, and cost efficiency.",
+                image: "",
+            },
+
         ],
     },
     //Electric Mobility
@@ -270,6 +314,17 @@ export const industries: Industry[] = [
                     "Integration of IoT devices for smart electric mobility solutions.",
                 image: "",
             },
+            {
+                title: "Charging Station Mapping",
+                description: "Location-based discovery of available EV charging stations.",
+                image: "",
+            },
+            {
+                title: "EV Fleet Management",
+                description: "Monitoring and managing electric vehicle fleets efficiently.",
+                image: "",
+            },
+
         ],
     },
     //E-commerce
@@ -320,6 +375,17 @@ export const industries: Industry[] = [
                     "Inventory tracking solutions to prevent stock shortages and overselling.",
                 image: "",
             },
+            {
+                title: "Customer Analytics",
+                description: "Insights into customer behavior, preferences, and purchase patterns.",
+                image: "",
+            },
+            {
+                title: "Marketing Automation",
+                description: "Automated email, promo, and remarketing tools to drive sales.",
+                image: "",
+            },
+
         ],
     },
     //"SaaS
@@ -370,6 +436,17 @@ export const industries: Industry[] = [
                     "Scalable cloud setups ensuring reliability and performance.",
                 image: "",
             },
+            {
+                title: "User Onboarding Systems",
+                description: "Guided onboarding flows to improve activation and retention.",
+                image: "",
+            },
+            {
+                title: "Usage Analytics",
+                description: "Tracking feature usage and user engagement across the platform.",
+                image: "",
+            },
+
         ],
     },
     //"FinTech"
@@ -420,6 +497,17 @@ export const industries: Industry[] = [
                     "Tools that detect and prevent fraudulent financial activities.",
                 image: "",
             },
+            {
+                title: "KYC & Identity Verification",
+                description: "Customer identity verification systems for compliance and security.",
+                image: "",
+            },
+            {
+                title: "Transaction Analytics",
+                description: "Insights into transaction trends, volumes, and user behavior.",
+                image: "",
+            },
+
         ],
     },
     //Healthcare
@@ -470,6 +558,17 @@ export const industries: Industry[] = [
                     "Solutions ensuring privacy and protection of sensitive medical data.",
                 image: "",
             },
+            {
+                title: "Telemedicine Platforms",
+                description: "Virtual consultation systems for remote patient care.",
+                image: "",
+            },
+            {
+                title: "Medical Billing Systems",
+                description: "Digital billing and insurance claim management tools.",
+                image: "",
+            },
+
         ],
     },
     //On-Demand
@@ -520,6 +619,17 @@ export const industries: Industry[] = [
                     "Automated alerts and notifications for users and providers.",
                 image: "",
             },
+            {
+                title: "Provider Management",
+                description: "Tools for onboarding, verifying, and managing service providers.",
+                image: "",
+            },
+            {
+                title: "Service Rating Systems",
+                description: "Ratings and reviews to ensure service quality and trust.",
+                image: "",
+            },
+
         ],
     },
     //Real Estate
@@ -570,6 +680,17 @@ export const industries: Industry[] = [
                     "Integrated payment solutions for property transactions.",
                 image: "",
             },
+            {
+                title: "Property Management Systems",
+                description: "Tools for managing tenants, leases, and maintenance tasks.",
+                image: "",
+            },
+            {
+                title: "Virtual Property Tours",
+                description: "Digital walkthroughs that allow remote property viewing.",
+                image: "",
+            },
+
         ],
     },
 

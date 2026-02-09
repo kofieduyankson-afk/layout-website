@@ -66,7 +66,7 @@ export const services: Service[] = [
         emoji: "🖥️",
         iconGradient: "bg-gradient-to-br from-slate-500 to-gray-700",
         description: "Reliable IT solutions to support, secure, and scale your business operations.",
-        items: ["System integration", "Infrastructure management", "Cybersecurity solutions", "IT support & maintenance"],
+        items: ["System integration", "Infrastructure management", "Cybersecurity solutions",],
         image: "/ITS.jpg",
         link: "/services/IT_Solutions",
         icon: "/icons8-computer.gif",
