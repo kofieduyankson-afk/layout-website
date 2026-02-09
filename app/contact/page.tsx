@@ -50,7 +50,7 @@ export default function Contact() {
                                     },
                                     {
                                         label: "Call Us",
-                                        value: "+233 507 056 286",
+                                        value: "+233 24 136 6340",
                                         desc: "Mon-Fri from 8am to 5pm GMT."
                                     },
                                     {
