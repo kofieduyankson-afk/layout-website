@@ -63,7 +63,8 @@ const AnimatedText: React.FC = () => {
 
 
             {/* Main Typing Headline */}
-            <h1 className="text-5xl sm:text-6xl font-extrabold text-[#262e31] leading-tight">
+
+            <h1 className="text-5xl sm:text-6xl font-extrabold text-[#262e31] leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#17a28f] to-[#262e31]">
                 {line1}
                 <span className="inline-block w-[4px] h-[48px] bg-[#17a28f] ml-2 animate-pulse align-middle" />
             </h1>
@@ -71,7 +72,7 @@ const AnimatedText: React.FC = () => {
             {/* Sub headline (animated line 2) */}
             <div className="relative h-14 overflow-hidden">
                 <p
-                    className={`text-xl sm:text-2xl text-[#262e31]/70 leading-relaxed max-w-2xl transition-all duration-700 ease-out transform
+                    className={`text-xl sm:text-2xl text-[#262e31] leading-relaxed max-w-2xl transition-all duration-700 ease-out transform
         ${line2 ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"}
       `}
                 >

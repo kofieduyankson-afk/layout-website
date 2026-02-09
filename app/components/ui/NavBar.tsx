@@ -92,7 +92,7 @@ export default function NavBar() {
 
             {/* MOBILE MENU PANEL */}
             {mobileOpen && (
-                <div className="md:hidden bg-[#17a28f] border-t border-white/20">
+                <div className="md:hidden text-[#262e31] bg-white border-t border-white/20">
                     <div className="flex flex-col px-6 py-4 gap-4">
                         <Link href="/services" onClick={() => setMobileOpen(false)}>
                             Services

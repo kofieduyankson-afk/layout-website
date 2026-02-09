@@ -23,16 +23,24 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative w-full min-h-[60vh] sm:min-h-screen overflow-hidden">
         <IntroBackground />
-        <div className="max-w-7xl mx-auto h-full px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 h-full items-center gap-8">
+        <div className="max-w-7xl mx-auto h-full sm:px-6">
+          <div className=" grid grid-cols-1 lg:grid-cols-2 h-full items-center gap-50">
 
             {/* LEFT: Typing Text */}
-            <div className="relative z-10 flex justify-center lg:justify-start">
+            <div className="relative z-10 flex flex-col gap-6 max-w-2xl text-center lg:text-left">
+              {/* Animated title */}
               <AnimatedText />
+
+              {/* Static supporting paragraph */}
+              <p className="text-xl sm:text-2xl text-[#262e31]/80 leading-relaxed max-w-3xl">
+                We are an IT consulting and digital solutions company helping businesses
+                design, build, and scale reliable technology.
+              </p>
             </div>
 
+
             {/* RIGHT: Lottie Animation */}
-            <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[500px]">
+            <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[500px] flex justify-end">
               <TechLottie />
             </div>
 

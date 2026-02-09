@@ -21,6 +21,8 @@ export interface Industry {
 }
 
 export const industries: Industry[] = [
+
+    //Automitive
     {
         title: "Automotive",
         category: "Mobility & Transportation",
@@ -70,7 +72,7 @@ export const industries: Industry[] = [
             },
         ],
     },
-
+    //Banking & Finance",
     {
         title: "Banking & Finance",
         category: "Financial Services",
@@ -120,7 +122,7 @@ export const industries: Industry[] = [
             },
         ],
     },
-
+    //"Shared Mobility"
     {
         title: "Shared Mobility",
         category: "Smart Mobility",
@@ -170,7 +172,7 @@ export const industries: Industry[] = [
             },
         ],
     },
-
+    //Logistics
     {
         title: "Logistics",
         category: "Supply Chain & Logistics",
@@ -220,7 +222,7 @@ export const industries: Industry[] = [
             },
         ],
     },
-
+    //Electric Mobility
     {
         title: "Electric Mobility",
         category: "Sustainable Technology",
@@ -270,7 +272,7 @@ export const industries: Industry[] = [
             },
         ],
     },
-
+    //E-commerce
     {
         title: "E-commerce",
         category: "Digital Commerce",
@@ -320,7 +322,7 @@ export const industries: Industry[] = [
             },
         ],
     },
-
+    //"SaaS
     {
         title: "SaaS",
         category: "Cloud Software",
@@ -370,6 +372,7 @@ export const industries: Industry[] = [
             },
         ],
     },
+    //"FinTech"
     {
         title: "FinTech",
         category: "Financial Technology",
@@ -419,6 +422,7 @@ export const industries: Industry[] = [
             },
         ],
     },
+    //Healthcare
     {
         title: "Healthcare",
         category: "Health Technology",
@@ -468,6 +472,7 @@ export const industries: Industry[] = [
             },
         ],
     },
+    //On-Demand
     {
         title: "On-Demand",
         category: "Real-Time Services",
@@ -517,6 +522,7 @@ export const industries: Industry[] = [
             },
         ],
     },
+    //Real Estate
     {
         title: "Real Estate",
         category: "Property Technology",
