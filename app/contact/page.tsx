@@ -45,12 +45,12 @@ export default function Contact() {
                                 {[
                                     {
                                         label: "Email Us",
-                                        value: "hello@layoutlaurate.com",
+                                        value: "info@layoutllc.com",
                                         desc: "Available for general inquiries and support."
                                     },
                                     {
                                         label: "Call Us",
-                                        value: "+233 55 000 0000",
+                                        value: "+233 507 056 286",
                                         desc: "Mon-Fri from 8am to 5pm GMT."
                                     },
                                     {

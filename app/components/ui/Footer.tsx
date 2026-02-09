@@ -56,7 +56,7 @@ export default function Footer() {
                         <h4 className="text-sm font-semibold text-white">Contact</h4>
                         <ul className="mt-3 space-y-2 text-sm text-gray-400">
                             <li>Email: info@layoutllc.com</li>
-                            <li>Phone: +233 000 000 000</li>
+                            <li>Phone: +233 507 056 286</li>
                             <li>Accra, Ghana</li>
                         </ul>
                     </div>
