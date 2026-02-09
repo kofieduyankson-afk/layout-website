@@ -172,7 +172,7 @@ function MegaMenuIndustries({
                             className={`group flex flex-col items-center justify-center text-center gap-2
                   rounded-lg p-3 w-full sm:w-auto sm:max-w-[160px]
                   transition hover:bg-gray-100
-                  ${index === items.length - 1 ? "col-start-2 md:col-start-3" : ""}`}
+                  `}
                         >
                             {item.animated_icon ? (
                                 <div className="w-8 h-8 flex items-center justify-center">

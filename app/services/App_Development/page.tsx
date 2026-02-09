@@ -98,7 +98,6 @@ export default function AppDevelopmentPage() {
                                 {/* DYNAMIC: Main Content Paragraph */}
                                 {data.content}
                             </p>
-                            <p>:</p>
 
                             {/* DYNAMIC: Feature List */}
                             <ul className="space-y-4 mt-4">

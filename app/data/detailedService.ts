@@ -22,6 +22,7 @@ export interface Service {
 
 
 export const services: Service[] = [
+    //IT Solutions
     {
         title: "IT Solutions",
         category: "Professional Services",
@@ -61,6 +62,7 @@ export const services: Service[] = [
             },
         ],
     },
+    //Web Development"
     {
         title: "Web Development",
         category: "Digital Experience",
@@ -100,6 +102,7 @@ export const services: Service[] = [
             },
         ],
     },
+    //App Development",
     {
         title: "App Development",
         category: "Mobile Solutions",
