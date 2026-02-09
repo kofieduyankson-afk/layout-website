@@ -65,9 +65,29 @@ export default function NavBar() {
                         <Link href="/about" className="text-[#262e31] hover:text-[#262e31]">
                             About Us
                         </Link>
-                        <Link href="/contact" className="text-[#262e31] hover:text-[#262e31]">
+                        <Link href="/contact" className="text-[#262e31] font-bold hover:text-[#262e31]">
                             Contact Us
                         </Link>
+                        <Link
+                            href="https://events.layoutllc.com/login"
+                            className="
+    group w-44 rounded-2xl bg-[#17a28f]
+    px-4 py-3
+    flex flex-col items-center justify-center
+    text-[#262e31] font-bold
+    shadow-md
+    hover:shadow-xl hover:-translate-y-0.5
+    transition-all duration-300
+  "
+                        >
+                            <span className="text-base leading-tight">
+                                Events
+                            </span>
+                            <span className="text-xs font-medium text-[#262e31]/80 group-hover:text-[#262e31]">
+                                Login as Organisation
+                            </span>
+                        </Link>
+
                     </div>
 
                     {/* MOBILE MENU BUTTON */}
@@ -106,6 +126,7 @@ export default function NavBar() {
                         <Link href="/contact" onClick={() => setMobileOpen(false)}>
                             Contact Us
                         </Link>
+
                     </div>
                 </div>
             )}
