@@ -40,12 +40,12 @@ export default function NavBar() {
                     <Link href="/" className="flex items-center gap-3">
                         <Image
                             src="/layoutircon.png"
-                            alt="Layout Laurate LLC Logo"
+                            alt="Layout Laureate LLC Logo"
                             width={80}
                             height={80}
                             className="object-contain"
                         />
-                        <span className="text-xl font-bold text-[#262e31]">Layout Laurate LLC</span>
+                        <span className="text-xl font-bold text-[#262e31]">Layout Laureate LLC</span>
                     </Link>
 
                     {/* DESKTOP MENU */}

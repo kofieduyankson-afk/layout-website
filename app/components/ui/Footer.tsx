@@ -12,13 +12,13 @@ export default function Footer() {
                     <div>
                         <Image
                             src="/layoutircon.png"
-                            alt="Layout Laurate LLC Logo"
+                            alt="Layout Laureate LLC Logo"
                             width={40}
                             height={40}
                             className="object-contain"
                         />
                         <h3 className="text-lg font-semibold text-white">
-                            Layout Laurate LLC
+                            Layout Laureate LLC
                         </h3>
                         <p className="mt-2 text-sm text-gray-400">
                             We provide reliable and professional services tailored to your business needs.
@@ -55,7 +55,7 @@ export default function Footer() {
                     <div>
                         <h4 className="text-sm font-semibold text-white">Contact</h4>
                         <ul className="mt-3 space-y-2 text-sm text-gray-400">
-                            <li>Email: info@company.com</li>
+                            <li>Email: info@layoutllc.com</li>
                             <li>Phone: +233 000 000 000</li>
                             <li>Accra, Ghana</li>
                         </ul>
@@ -64,7 +64,7 @@ export default function Footer() {
 
                 {/* Bottom Bar */}
                 <div className="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
-                    © {new Date().getFullYear()} Layout Laurate LLC. All rights reserved.
+                    © {new Date().getFullYear()} Layout Laureate LLC. All rights reserved.
                 </div>
             </div>
         </footer>
